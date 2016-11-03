@@ -1,0 +1,1560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		012865E828EFA0F4A9C8E83CF8F6A77E /* ARTNSDate+ARTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 109C13EBA9EF2EB66C33B497C3A2DD68 /* ARTNSDate+ARTUtil.m */; };
+		023AF28F34C0191BFDC0034BC4DBFB1D /* ARTJsonLikeEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = A4D7D2C09813180993A628231212508B /* ARTJsonLikeEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0247F879593E62F7D8CB2521CFA38B44 /* ARTQueuedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B47B44D3EE9B2ED8C5C697E256BD91F /* ARTQueuedMessage.m */; };
+		0296B4B53622140D35E5A74D34FF825B /* ARTPaginatedResult.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC1A983AE67E81022E5C9D36E6C73A5 /* ARTPaginatedResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0364273D118F49E10087BD18EED2453E /* ARTPresenceMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A6852423B2E675CC6CB477A9C1412F /* ARTPresenceMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0410D70A2475E7BFED0566361CB81EBD /* ARTTokenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = FD86D3EAC62D980926436DFD006A72CB /* ARTTokenRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0678B4507EFBBCD419590ED5D3714F6F /* MessagePackParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 101BFE9B69B215F5B75D5B741CFF2430 /* MessagePackParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0754CF219E6940BE55A5AF295843A3A8 /* NSArray+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = 91610AEF77C34E1A9919D9AFD1CFAAAD /* NSArray+MessagePack.m */; };
+		0840470BF3F99FD96591AC28B8561EA9 /* ARTProtocolMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8077BD38FA68193F23BB3CC06AF69399 /* ARTProtocolMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D1982F1DC365FB0C0A6F4416687FD26 /* ARTRealtimeTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5449DC14097D89C37E6D40BAE893D1F8 /* ARTRealtimeTransport.m */; };
+		0DB8B018091DD073F1093D0C39A415D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC436C69DE8D744B44407CB48696EBC /* Foundation.framework */; };
+		0E0C72B9B7B3ABE1E214B1919C31902D /* ARTRealtimePresence+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC3DA8D686676458AC05747D7A40AAB /* ARTRealtimePresence+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12104C7C8613B18CA514F4F61B610937 /* ARTEventEmitter+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 73E473EF6AC980BA7E2ADE62F7824DFB /* ARTEventEmitter+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12782E902AB44E954704983AE89E8A5C /* ARTOSReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = FA6DB430710BFF7ACABDBA4CCEEC6C7F /* ARTOSReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		138E3C62FDF47560A31C0497E7DB6B5E /* ARTMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C06BA46F4DC36322E78429C674DD4B1 /* ARTMessage.m */; };
+		14BD4F384BD346F7980F633EB2732520 /* ARTChannelOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA2F75B27E757EE95ED982E061F3165 /* ARTChannelOptions.m */; };
+		15511AD798D338BFB731324C9CE3F9E7 /* ARTNSArray+ARTFunctional.m in Sources */ = {isa = PBXBuildFile; fileRef = A46D15CD4D4BF62F3BDB4C350C286C5A /* ARTNSArray+ARTFunctional.m */; };
+		167ED0F98BD1D9AFA0DFA740F2B8A1ED /* Pods-SchoolBusLocator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 162EAEFE8696E1664C1E3BE7A4B3F6D8 /* Pods-SchoolBusLocator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17E3508062615E4D57F471EA77D948C9 /* ARTTokenParams.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB5178F4223DB624C8D4AC13EB000D8 /* ARTTokenParams.m */; };
+		19789C153C952F8CC89E0615E60D570F /* CompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CAD77FBD272A8A36D4A90825B9DAE93 /* CompatibilityMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A530F425834AD26B885324D7DF23868 /* ARTChannels.h in Headers */ = {isa = PBXBuildFile; fileRef = 64309230E0D023C99EDFE92A482EC8B2 /* ARTChannels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A6EC4487499CE2133F263FBD8166148 /* ARTNSDictionary+ARTDictionaryUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC51CD8CCE76052063861CB80191224 /* ARTNSDictionary+ARTDictionaryUtil.m */; };
+		1B75F27EAAB5DA1C8CB5BAE580C28408 /* ARTLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D41E31E1FA077909ADC8EC01947F2 /* ARTLog.m */; };
+		1B864DC98F98FC9AE258821BEBAD6E83 /* ARTPresence+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D386CE6E93093B0FD478CCD548C716 /* ARTPresence+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BAAD49F120F4A7564F4D15C5C5D1C60 /* ARTHttp.h in Headers */ = {isa = PBXBuildFile; fileRef = 094BF5A5305DDCE6818745E626643FB5 /* ARTHttp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CD18A82FDC02C765C8E7BD90A706274 /* ARTRealtimeChannels.h in Headers */ = {isa = PBXBuildFile; fileRef = 63596B9A238C1F7CA36FBA05B0694C4C /* ARTRealtimeChannels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D8A14419BCCFCBB3C6D4D899D0285A9 /* MessagePackPacker.h in Headers */ = {isa = PBXBuildFile; fileRef = EB73E4CB98464FE6DFF3D323DE9689F8 /* MessagePackPacker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F378D3223497392AA166DFC3310A5C2 /* ARTPresenceMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = EF28A68D9BD99CBC8B6FEC92194D68AC /* ARTPresenceMessage.m */; };
+		22E795054B532647CD68AC3FD57D4049 /* ARTJsonLikeEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D7C8DF0187E7189C90C4320380D4E2 /* ARTJsonLikeEncoder.m */; };
+		24E35DAFB64BE6A4F21BE51015A2B6B6 /* ARTCrypto+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC0C701D291F81C94E4BED019BD8D7C /* ARTCrypto+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		289F04475549B0D8C82CD66230EB83BA /* ARTNSDictionary+ARTDictionaryUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F68D5725A4AFDA8D9A603209FBA71FBC /* ARTNSDictionary+ARTDictionaryUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		292FD1FDB4BA34B701E18C0042A9A8BF /* ARTWebSocketTransport+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 01F5062D96EFB9A7E2A165E9248DCA68 /* ARTWebSocketTransport+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B09A7560FF3D25BE700D4A6CE4DDB09 /* ARTDefault+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 15473B57684A56FC32E6D041431B203F /* ARTDefault+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C8CE56BC7CB969FDB222EE55F9B08E5 /* pack.h in Headers */ = {isa = PBXBuildFile; fileRef = A8EBCA4A3CE8ABC895936FD0DB54A5B2 /* pack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C9C90D1D4EC77A7CAE365F3C081FCF1 /* ARTPresence.h in Headers */ = {isa = PBXBuildFile; fileRef = B46F5A74BD596C920878EC0E03D0079F /* ARTPresence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CAAE5BEDC043B09CD1241C809BDD79B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC436C69DE8D744B44407CB48696EBC /* Foundation.framework */; };
+		2DE906194BCE22DAC85C9CD96756B45A /* unpack_define.h in Headers */ = {isa = PBXBuildFile; fileRef = 518255E67634CA09BF8E409B35AEAF40 /* unpack_define.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E6ECEC3CC9923520668948354DE1C40 /* ARTDataEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 90B7D31BCFF917AA37F98CB069F2AD76 /* ARTDataEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3170FA1453DD2FB31F070E2DB3B50CB0 /* ARTProtocolMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E452108F1DB0D6585A87BC6D7AEAB7 /* ARTProtocolMessage.m */; };
+		32182D598977C226DED1A7D39EAC9DDB /* zbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 16614FA9C110BD0A88A9CA84325EEA55 /* zbuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		321A2961D5C4BCA49D6D544F12052A7B /* Pods-SchoolBusLocator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CCF69FEA87E7664E0EE0ACDE38E929 /* Pods-SchoolBusLocator-dummy.m */; };
+		3851AC9A81173917553C77A96611C699 /* ARTChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = A533597642C34DF102BEB65B53E56E96 /* ARTChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A11D0BE1D2DB999B3C8374DA798FABF /* ARTURLSessionServerTrust.m in Sources */ = {isa = PBXBuildFile; fileRef = 761081C021DDAD4CCA3C8C780274EB1D /* ARTURLSessionServerTrust.m */; };
+		3A4D25E24E788F14682591EE3C44F0D6 /* NSDictionary+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = 213BDB71C57F33A0F7B510580512D29F /* NSDictionary+MessagePack.m */; };
+		3B40BBE39ED8899D8480C120C67269A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC436C69DE8D744B44407CB48696EBC /* Foundation.framework */; };
+		442CDD6678E9C37001F523505A02E515 /* ARTRealtimeChannels+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = EC8D099A7850C3B8258468EEF081B65F /* ARTRealtimeChannels+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44F0575921E31EBECA456CC1C4B2D7AB /* pack_define.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EBE528A89EFD682200F42C98AA306BB /* pack_define.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		453081B2D6C1398884BA6C17B6EEC944 /* ARTChannels.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5DF819C9735FFFC29B7503B669A1C4 /* ARTChannels.m */; };
+		4640008F5DB2D4C8C719D8D643C60E70 /* ARTStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 8151D31176AA3FDB8A6A39AF8311FCB4 /* ARTStats.m */; };
+		4661F722D7B5EC14A2A8524565FD82AC /* ARTRestChannels.h in Headers */ = {isa = PBXBuildFile; fileRef = EA881416D325AF2ED619C3A4C86891B2 /* ARTRestChannels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49B6DC9A654DD5AA277015DDED3B38B2 /* msgpack.h in Headers */ = {isa = PBXBuildFile; fileRef = 50481F536BED296518FB88D17D24F683 /* msgpack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DD8D7285F7AF1D25F2240B27EF60EC3 /* ARTReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 10592535CD2A240501C7861F221F09EA /* ARTReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E9B04FAA85E6822BC39E6D61B945E9A /* ARTAuthOptions+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A66B6195EE9CBD2D7F2268CD52D1D9BC /* ARTAuthOptions+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		519A55A2DE6F92C3E66951674C1D8472 /* ARTRestPresence.h in Headers */ = {isa = PBXBuildFile; fileRef = 58C4869DAF75F39AA29E778989A1EEC2 /* ARTRestPresence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52D42FDAEE4FAC108FB86CCE92F565B2 /* MessagePackPacker.m in Sources */ = {isa = PBXBuildFile; fileRef = 111F09D2019097CC8F03722B982984D5 /* MessagePackPacker.m */; };
+		52E2F7B770F18D445FB7D5CD561430CD /* ARTDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = C52BBF46188273442D82B484375E39B2 /* ARTDefault.m */; };
+		542B399052A6B68302336D01A8BF336F /* ARTDataEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0A353DD218497E2678496B1EDC7E1 /* ARTDataEncoder.m */; };
+		55E0D06F53998FD797362C7ADCB42459 /* ARTEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 080680C019DD734F73531AB5B4BB06E2 /* ARTEventEmitter.m */; };
+		55E8ADDFC3CCE0751BA1940C2AC7EC50 /* ARTRealtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6756108745060EC26B9FA8355454E4 /* ARTRealtime.m */; };
+		5777E7AE31AA0AC2188A80A609AB0916 /* ARTChannelOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = EF59E21E618B970D9C4C575310E4CC73 /* ARTChannelOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57CBEE03AB561EB023534E899940527F /* ARTRestPresence.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E840EF22C441ED6DB2F84D2314700B9 /* ARTRestPresence.m */; };
+		57FC28DCE3F9AE811963D255D8015C9B /* unpack.h in Headers */ = {isa = PBXBuildFile; fileRef = A4EEA247EB3D38EAD4007A616B30D386 /* unpack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59A60B3B9A1DE5A26D2738E1CBC4E5FA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1034DB822E21F2B9C27CC029F7B1FE10 /* CFNetwork.framework */; };
+		59AAE538688E0878B2FD7C01E38D7287 /* ARTBaseMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = C1E07B91A7B3912C85BC42FF193039A4 /* ARTBaseMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B31499312EDE2AF2A4538715D44D923 /* ARTTokenDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D8F4DB90E403BCDE108D109DCB513F /* ARTTokenDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BB69C2225797E3DF8FDE9230134B2F6 /* ARTJsonEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 63770DD2CE40ECD401968FACF4B18A77 /* ARTJsonEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6029CA65916491DBDE28442AAB16E35D /* AblyRealtime.h in Headers */ = {isa = PBXBuildFile; fileRef = 967AF1F1CB1D88653C65EA4FB3CC4949 /* AblyRealtime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61EA6E0177FE88B2995D50E79FAE57C9 /* NSNumber+MessagePack.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FB24F365FEBC2EDF72B4C960AF588DF /* NSNumber+MessagePack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61F3F44807F000562E36E39DC483823C /* vrefbuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 12CF6C9D32C6A0953BBECAAB3BF6293D /* vrefbuffer.c */; };
+		62CBC3D545F16BF54F5E6CF2AB5DA09C /* MessagePack.h in Headers */ = {isa = PBXBuildFile; fileRef = 401B1B4E9EF32AFA0494CB2F382BF1DF /* MessagePack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63DF4B61FAD7CEA2A176557EA6F98909 /* ARTFallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A5C1C2A80D2FD5B80CE118553D8AD5 /* ARTFallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64C91F3BC7B9D4A3D1892F9A33A59017 /* ARTAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB805AECD5FCFBEE8455A767CC05874 /* ARTAuth.m */; };
+		661DAC4C3311A8BBAFF2957A7765BC39 /* ARTMsgpackEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 68F96D887AEEEA48B689566E5E44C2FE /* ARTMsgpackEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		676FBB2BC59CFD6B1584D1E05A2C3DA2 /* unpack_template.h in Headers */ = {isa = PBXBuildFile; fileRef = D742C52A52DCEF0FA2BC08E73173CECB /* unpack_template.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67D1D003A36004DEB1E1378FFE1BC021 /* NSArray+MessagePack.h in Headers */ = {isa = PBXBuildFile; fileRef = 962ABF043EC1D7C54996F03BB120E20B /* NSArray+MessagePack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CDE2EFED2348A32CE95FFE5F50D3CCB /* ARTTokenDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5E331710E338A19C3481A9B0ABEE6A /* ARTTokenDetails.m */; };
+		723F4ECE04DA471D3317620119E5A8B9 /* NSString+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = 970B75DED225200F3235D40A37DE8DD9 /* NSString+MessagePack.m */; };
+		74FF38B60020F9AAA22F79D14DDAEFD6 /* ARTURLSessionServerTrust.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6B81C8916E054B1B376F5EDA5B18BC /* ARTURLSessionServerTrust.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C133AEACD7F2A62250D5C7CBF208BC /* ARTDefault.h in Headers */ = {isa = PBXBuildFile; fileRef = 23A94E9C3CFA3CA3B18F34FAE0C5F60A /* ARTDefault.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7790B24BB91507BE4847F27B959E9E0E /* ARTLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E5BF5A9FD248B20935ADBED62E8A9 /* ARTLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78374FB96021B3B05A867FBEF65A929A /* ARTWebSocketTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = EC2EA35BCF097A93EB1F0C753B445A22 /* ARTWebSocketTransport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A1F5DB85ED6FEE11DA86FA89635C18E /* ARTNSArray+ARTFunctional.h in Headers */ = {isa = PBXBuildFile; fileRef = 80016AE6B611241D52E1E02BB2A36622 /* ARTNSArray+ARTFunctional.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A22C7CAFF0D96DF569E6B5A092FE17F /* ARTTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3F6C3B6D833C8F988B4D6E3578C9F /* ARTTypes.m */; };
+		7A8CE2FAF2636DA323A46541D0D09B84 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D43F00475D0C2CC181BE8D511F908F3 /* version.c */; };
+		7AB0B36E8DE595C669B96E2CA2AC58B3 /* NSNull+MessagePack.h in Headers */ = {isa = PBXBuildFile; fileRef = 265AEA0541E76F333B85DBF20EECB82E /* NSNull+MessagePack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B32616CC1A3F593D80323508F4B92 /* ARTClientOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3BB461BCE799F3FBAC34567EF13D48 /* ARTClientOptions.m */; };
+		7D43039B23057EAD3A14E2F77DF51E6D /* NSData+MessagePack.h in Headers */ = {isa = PBXBuildFile; fileRef = A4A321A6D05A5B36AEDA121A53E4A128 /* NSData+MessagePack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F06766E6D086B25E9FC0EC7C2E04131 /* ARTOSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDB26D569DE0A6AF9B6F22B5854D38F /* ARTOSReachability.m */; };
+		7F96AAE39F0F03391CE437A5CD478A6D /* NSString+MessagePack.h in Headers */ = {isa = PBXBuildFile; fileRef = 7459F6A86F87306FCE80EA63CE240410 /* NSString+MessagePack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8338323268B8BB1AA813D1628361B38B /* ARTProtocolMessage+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A18BD24B14896396F5A2EEE2B803DD2B /* ARTProtocolMessage+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		883B9EA62F4D48D9C43F990B38AAFEBD /* object.h in Headers */ = {isa = PBXBuildFile; fileRef = 350BE6788A479DAEC35D74A4324D1F1F /* object.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		892E27747E5C1A4E087DA52B29E927A4 /* ARTMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A765C07808A55D1D1D55626D48B0A66 /* ARTMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B43036819DAE93F8BA8715DBAF82498 /* ARTRealtimeChannel+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1647249881357D6BE5DC569F3AFE5BCC /* ARTRealtimeChannel+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DD0F26E3E27BB289D6FE7E2B0A7794A /* ARTStats.h in Headers */ = {isa = PBXBuildFile; fileRef = 816BEF5B4CE245E639CDA00A9016A565 /* ARTStats.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E9535127916EBDF3A6E8CC0FDB63B50 /* AblyRealtime-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB20E6D992D86178A8168711163B05F8 /* AblyRealtime-dummy.m */; };
+		8FB42E3E800127A5112393C37CA4E24D /* ARTPresenceMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 65679924D869BE7E88C58F164AC911F7 /* ARTPresenceMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		935AE059C1929D9060BD73051B4FA928 /* ARTNSDate+ARTUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2C5B7EFE8C606C2CA449B01C3FF2DF /* ARTNSDate+ARTUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94941320303004F585DF25D1306C976F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69BDC6210D1CA6CE1AB4EB1CE54851CF /* Security.framework */; };
+		94D94DBCC071ABC8AFECC4E1DE23477B /* msgpack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B34F8B06D48F9846DC34D21E7851377 /* msgpack.framework */; };
+		9551360361813260E597817D3485A548 /* sysdep.h in Headers */ = {isa = PBXBuildFile; fileRef = C0E520A2A95EE9C84D4500A84C7AA31D /* sysdep.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9578C5522FF3C3FF6F61593B1E5DDB3E /* SocketRocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 556B140E7B0865F23F993ABC78B7FA7D /* SocketRocket-dummy.m */; };
+		95FEECB796A715587E7A5C5961A28E91 /* ARTRealtimeChannels.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDB5BB419BD70AF6DE2D09B0B18E525 /* ARTRealtimeChannels.m */; };
+		97C77C50AC8B3470FB02520CE457AA0B /* ARTEventEmitter.h in Headers */ = {isa = PBXBuildFile; fileRef = C86BE3909CB13D621115B50E8EAE373D /* ARTEventEmitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98D8422B10CF28A45EAB3F05134FCB23 /* ARTRealtimeChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD113DC320CC90BA2A1809ADA498B90 /* ARTRealtimeChannel.m */; };
+		99224B02E558E0D5DFD85EE2AED8B2C9 /* ARTDataQuery+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B28F8080DB789A116356A20BBF42FEF /* ARTDataQuery+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BE7221D0F1CAE9383E59719E477F30D /* version_master.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA1646C486F0C185195DC10B26F8C3E /* version_master.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C821D10D8C94C701B0D992AA715BB0B /* ARTPresence.m in Sources */ = {isa = PBXBuildFile; fileRef = 56095A58E12EDF4B873ECFE803E0534E /* ARTPresence.m */; };
+		9E3B83567ACCAC7F5F784F2A0BD6DEEE /* ARTConnectionDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = E02B814D234AED53C2CF0789F13E1944 /* ARTConnectionDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F632D40B578D67A8CE7B69E06970E35 /* ARTDataQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = B0531D0EC7C4E1C3334FD93FF6EACF89 /* ARTDataQuery.m */; };
+		A215266401A3263D7A77026C781CE2CA /* ARTRest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B930E68FDB9D336BEEA6AB04C86F84E /* ARTRest.m */; };
+		A4376DE82A4B608D58DD4DBB99A747E7 /* ARTAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = F7772B734C23B5E5E9DB5262EE9F5776 /* ARTAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A462850671AC0AFB1920DAA9DEA21CB3 /* ARTPaginatedResult+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F709ACB5677D60F585C11E8725CC58 /* ARTPaginatedResult+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6596443DEBD7C6B6C9EFC372E461B61 /* ARTDataQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0FA422FDA8C455E7DE3FBF48C56BA1 /* ARTDataQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6D6EDF6730AAD564F490A66D49280D5 /* sbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 914344FFD4F73FDE4BF11B4DB6D7BD2B /* sbuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6EF46D6865FC4E7ECA4994BBA4A74FC /* ARTRest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FA2B20E3B1098389FD079961F3D2744 /* ARTRest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9FE1FF57850160BD4E95DF440744EDB /* ARTBaseMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1818CC93C3D5ED353D54E950F9448F9B /* ARTBaseMessage.m */; };
+		AA8A525A6F956C666CF4EB8D2D9786E1 /* ARTChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42A5E527D3A8DA597149B7486C53FD /* ARTChannel.m */; };
+		AAFCD4E1000142057CE7D826ADADB40A /* ARTConnectionDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 381FA9C24159F25E42BD9AE3CD8A3335 /* ARTConnectionDetails.m */; };
+		AB839EE1465511625A3D61B2D684B775 /* zone.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AF6D6CAD1EEF6759BE080118A8B9680 /* zone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE866D40A241D87F03E0D6DCB325B933 /* SocketRocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BFB93780058AACCAAB90B5EF5044E43 /* SocketRocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEAA07921ED65EDD96BF1E1611274F59 /* ARTChannels+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A8AF3B38049A7D36BB2848A4A5E16EC0 /* ARTChannels+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B03BF7CBAA4669EC483DCC037418B14C /* ARTHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F1EF9D01EFEB197AC935B7A2EBD72D /* ARTHttp.m */; };
+		B4AA6253ECF4834CB5F26F8833613C78 /* ARTClientOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 333FDA87E52297C431157E198DCEBFDD /* ARTClientOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B66B625EAE8B8112E5497BFF9832BD3A /* ARTAuth+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7F60B96721C6CC9A4BE268472C0FF0 /* ARTAuth+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B82C4CEDB140781FEE7B67EE3871F3E9 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D599D2CD29C1D3BC24C440C1963F1D /* SocketRocket.framework */; };
+		B8E5598218ED96A9B5C88DAF9DB2F662 /* zone.c in Sources */ = {isa = PBXBuildFile; fileRef = 48A4B8FCA6B6AD60C7B9F4BCB437EC78 /* zone.c */; };
+		BA3C2573AC7BF2C960379988787B8250 /* ARTStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4662FFFB9E596DEF7ECF3CA63886B397 /* ARTStatus.m */; };
+		BAA7C29FE99C392385B14EFAED29C419 /* ARTEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 635BEFC9DFB0B466BE524C2F9DD40108 /* ARTEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAD2A27F7110CF951C7B0365658B795E /* msgpack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA29BE4735EADA8E591CA90DC56CCA8C /* msgpack-dummy.m */; };
+		BB12AA554CFA18BABD36716E298C092C /* ARTRestChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF5461D7B5A0261792BB019D4C66B60 /* ARTRestChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD2C299DF8F1BF5E3D3119D4F386F9FE /* MessagePackParser+Streaming.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB2BD35225956429BEFF03F4F83B6F /* MessagePackParser+Streaming.m */; };
+		BE64B2E83D396BC04C85BB063AC28FF7 /* ARTBaseMessage+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = DD38F84EFFECDC223E79617C98EF7B12 /* ARTBaseMessage+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2F1A38699B4D3F0D903F1773FA269A4 /* ARTConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = FBCADBAF11F89D021C1DE686E5E622A2 /* ARTConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C45A25356AE5D1CFD3BAD71111483D88 /* ARTTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3912C35ECE6AFB038A619B99C8DAB /* ARTTokenRequest.m */; };
+		C65539120E5E12A04E8012C370B69F9E /* ARTMsgpackEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F759AC7E19BBFAD9FD0DCD38CEFA87 /* ARTMsgpackEncoder.m */; };
+		C80FF034793CF1FEE33C67C0A5461B92 /* NSData+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = 437878D644C1C9A20CC7CD25B9A2F614 /* NSData+MessagePack.m */; };
+		C86FB36BC32285F3874A00711CAA01F9 /* ARTCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 26572A597569F47A9CED17068F7C895C /* ARTCrypto.m */; };
+		C9227835F17C92F014300CC047B6BC0C /* NSNull+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = FF98F7DED0E8F3D005DD533EF8614575 /* NSNull+MessagePack.m */; };
+		CAE9598A919A4F18DE789148D6FBA8EB /* ARTQueuedMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EE1A13B5BC8D930398CD97F9351F6C6 /* ARTQueuedMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEDFDEDE512A7A8909505813A2BBE609 /* ARTConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B50A6FD94C26418F9F12070CC72358 /* ARTConnection.m */; };
+		D03DF6180CFD5AE5E5E252AF38568C47 /* ARTRealtimeChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 99E2AF6199AEA238A71387B46DA79F3F /* ARTRealtimeChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D07E7A96E3F23472BC9F33D60D7500CF /* MessagePackParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F480A07C44B7ED6489715F0F2D910 /* MessagePackParser.m */; };
+		D140B6088FB45E60B0F042361708D482 /* vrefbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = E099B48A5C8CC2B5E03AD40135CCCA37 /* vrefbuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1BE8B0D2E387F396933DDE6CF9D6067 /* ARTTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = EF44BBFAF0F37C9B3E642FE4C12DA7D4 /* ARTTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D24FBAFD9056BF7E7DACAB01152AEF63 /* ARTTokenParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 78B55EEE5B0DE5CC389D7B8AEC7F4227 /* ARTTokenParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D25D64742D375DAC486A96E54E6D8639 /* ARTChannel+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A5D8EDCFA5159055D48B5E65E4287BB6 /* ARTChannel+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D85BD2911825B4D426E15B02BCB4DEA2 /* ARTRestChannels.m in Sources */ = {isa = PBXBuildFile; fileRef = 547BC73A2550E01F2082056E6600B066 /* ARTRestChannels.m */; };
+		D86E30E9B8B4617599AE113F0D18C374 /* ARTTokenParams+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F68B446433CB339237A2CAE2FDD5E2AD /* ARTTokenParams+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D90F0B9C910F53636F020935A5C94ACA /* NSNumber+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9464FF2E78CB40993C172B23D15E21 /* NSNumber+MessagePack.m */; };
+		D9BCE9F89598D9BB79E53F623151F36E /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD5F1238FB0F6DFEDF9D7B5697BC9D1 /* version.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9E415B6DAAFC1E65C93A92BD6789F3D /* pack_template.h in Headers */ = {isa = PBXBuildFile; fileRef = 28CA73B99F55416AFA2B582DAD3A0CB1 /* pack_template.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB8CE76FA1BE21DEE65AC652D5881CE5 /* ARTLog+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C8D877519C16ED1EFFDF152E6D08AE /* ARTLog+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE24F27D126CC2C53C281782DDA3C0C1 /* NSDictionary+MessagePack.h in Headers */ = {isa = PBXBuildFile; fileRef = 7779FABAB7D795FCF0FC0EC1C571E46C /* NSDictionary+MessagePack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E021A3E5F469D14693BD8DBCFAE2D1C0 /* SocketRocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 49FEDE3274DD17083B49F721B0B39A85 /* SocketRocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E03FB26B6CC13F7CF582FDEED7B5C7A4 /* ARTCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 1225B2C77FF4131B5C3BFAA2AD087EA3 /* ARTCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E058CB4CEC1343C185AF2DC85A34573F /* ARTRealtimeTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D68BB108FC824256326242C7B3BE0FA /* ARTRealtimeTransport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2C03C5609EA29FA0ADD8CE5B30636EA /* objectc.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EC6CAABC92DB2703C4DD033DAF749DF /* objectc.c */; };
+		E3F72EF9EC239C9BA75E3B1B86A70C48 /* ARTAuthOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B06BC10E3318E2C290F8263BD5EFD32B /* ARTAuthOptions.m */; };
+		E7AEF2881ED8FCB0842A7319B808AC5A /* ARTPaginatedResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BAD67928426BF75119C65FB5485000 /* ARTPaginatedResult.m */; };
+		E94E02FE8C304FB2DEEA8781F63BCCC4 /* ARTClientOptions+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 91A641E227667F9E914218962BC6AB73 /* ARTClientOptions+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBC8641FCCF1200756E2E8BA0DF73F48 /* ARTJsonEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F769376DA5BE88725AE1E6980F923CD4 /* ARTJsonEncoder.m */; };
+		ED009C79D027C1CA879D404A47993EC6 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C609CE546B268A52DCC01900ABAA09BE /* SRWebSocket.m */; };
+		ED85B394421BE72EE4CEF4CBABEE89FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC436C69DE8D744B44407CB48696EBC /* Foundation.framework */; };
+		EDC4229AAD15380F39506B4380B87456 /* ARTWebSocketTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = F729BC1E3371C4F27409DEB727700BE8 /* ARTWebSocketTransport.m */; };
+		EE2A4947CBA0D4B1C9D197E049C6D822 /* ARTRest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B8D2B6244438849BD0DEA30D6EFE4F78 /* ARTRest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE2CAD388E82356810D769C7194D0F1B /* ARTRealtime.h in Headers */ = {isa = PBXBuildFile; fileRef = FFE2572BF148EB05ED050A5DF0B52032 /* ARTRealtime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F04868970D6458C665BCD308302EA806 /* ARTConnection+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E27E92FCBE771F8B522FA0897B9918 /* ARTConnection+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4C8F289223F8305DADFE41E7436E255 /* ARTFallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4C5DA7A2D674F8BED380BAC1920D22 /* ARTFallback.m */; };
+		F4FEF9CC1335271720B752950153920B /* ARTRestChannel+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F15121FAF77C7F9540C9B87599524F03 /* ARTRestChannel+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F522F290003588994BA3B43E4D12FF17 /* ARTPresenceMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABD75D7123F2F90CD11B9574E0DAE4B /* ARTPresenceMap.m */; };
+		F5E1B760DFA86FBB15A09A89F5FBAB01 /* ARTConnectionDetails+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3362246F453693EC181121AFE4206F74 /* ARTConnectionDetails+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F66C6D6E3BEE0201CD2EDDEBFED3107A /* ARTStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 622DFF9389E7961BFA3630BB99A59378 /* ARTStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6D064C6E4B9B363290E9CE666E0C1C8 /* ARTRealtime+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E81979F021EC7DF22BDBE58E2255221 /* ARTRealtime+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7B7D82A66E70529DA4C428A65CD0491 /* unpack.c in Sources */ = {isa = PBXBuildFile; fileRef = CF19C7710D0DCD84892D88255103E112 /* unpack.c */; };
+		F7C1BB5E71B3AA810B51EEC31D8B4FB5 /* ARTRestPresence+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BC20921CA75A6BD725A4892CAC5DF92D /* ARTRestPresence+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9410E809C89134D64B32991CB4247C5 /* ARTRestChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFFDEEF7C0F2047B25F91A00E524181 /* ARTRestChannel.m */; };
+		FABF22424DDDBDE9C0024787C6F35BEB /* ARTAuthOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 886C5ABF32BF48FC7DE021C587128EA7 /* ARTAuthOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB560AE16B7257C001A9139FD814F7EF /* ARTRealtimePresence.h in Headers */ = {isa = PBXBuildFile; fileRef = 88EC58EC3C275532C8393D872C1C58CA /* ARTRealtimePresence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC31EADBEF83BC2DC950CE29E36CBE5A /* ARTRealtimePresence.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FF3E6FD87B60F30FF1EF10580FB674 /* ARTRealtimePresence.m */; };
+		FDD09470FE2E1A939F51F8E1D4EB07CB /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 723F19F4E8B9CAC78AB71D5CD6592418 /* SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFFDD2EF6AF9C35A6F78B3FE1C8B77D5 /* MessagePackParser+Streaming.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E26E75675B2E4E0AB6139580BA89D6E /* MessagePackParser+Streaming.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1385A35781E2DB63594020D530E01279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71DE39C6DC74DF260209E474303AAD0;
+			remoteInfo = msgpack;
+		};
+		14C31E57C9E59A17F73D3471900BDB4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3C96090D5500AD1E03C269284F83F81;
+			remoteInfo = SocketRocket;
+		};
+		9FC61C2E3788A4297B949884E57A860F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71DE39C6DC74DF260209E474303AAD0;
+			remoteInfo = msgpack;
+		};
+		A06E848B4D1C228E89F1BED01EB86A54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20606BCAEBABE93C739E57D3D6AE13DF;
+			remoteInfo = AblyRealtime;
+		};
+		F1291822CD61EC6F6FF3937F23D5990E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3C96090D5500AD1E03C269284F83F81;
+			remoteInfo = SocketRocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01F5062D96EFB9A7E2A165E9248DCA68 /* ARTWebSocketTransport+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTWebSocketTransport+Private.h"; path = "Source/ARTWebSocketTransport+Private.h"; sourceTree = "<group>"; };
+		04B1DEB9208694B039791979FEE834CB /* Pods-SchoolBusLocator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SchoolBusLocator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		05E27E92FCBE771F8B522FA0897B9918 /* ARTConnection+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTConnection+Private.h"; path = "Source/ARTConnection+Private.h"; sourceTree = "<group>"; };
+		080680C019DD734F73531AB5B4BB06E2 /* ARTEventEmitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTEventEmitter.m; path = Source/ARTEventEmitter.m; sourceTree = "<group>"; };
+		082E5BF5A9FD248B20935ADBED62E8A9 /* ARTLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTLog.h; path = Source/ARTLog.h; sourceTree = "<group>"; };
+		094BF5A5305DDCE6818745E626643FB5 /* ARTHttp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTHttp.h; path = Source/ARTHttp.h; sourceTree = "<group>"; };
+		0B01524C15AB12B158F312817289FF53 /* Pods-SchoolBusLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SchoolBusLocator.debug.xcconfig"; sourceTree = "<group>"; };
+		0B4772C87C8822138C37B7A399C2DA96 /* Pods-SchoolBusLocator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SchoolBusLocator.modulemap"; sourceTree = "<group>"; };
+		0DD5F1238FB0F6DFEDF9D7B5697BC9D1 /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = Pod/Classes/msgpack_src/msgpack/version.h; sourceTree = "<group>"; };
+		0F127A7993BE3119147749E7B20AE95B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FC51CD8CCE76052063861CB80191224 /* ARTNSDictionary+ARTDictionaryUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ARTNSDictionary+ARTDictionaryUtil.m"; path = "Source/ARTNSDictionary+ARTDictionaryUtil.m"; sourceTree = "<group>"; };
+		0FDB26D569DE0A6AF9B6F22B5854D38F /* ARTOSReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTOSReachability.m; path = Source/ARTOSReachability.m; sourceTree = "<group>"; };
+		101BFE9B69B215F5B75D5B741CFF2430 /* MessagePackParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MessagePackParser.h; path = Pod/Classes/MessagePackParser.h; sourceTree = "<group>"; };
+		1034DB822E21F2B9C27CC029F7B1FE10 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		10592535CD2A240501C7861F221F09EA /* ARTReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTReachability.h; path = Source/ARTReachability.h; sourceTree = "<group>"; };
+		109C13EBA9EF2EB66C33B497C3A2DD68 /* ARTNSDate+ARTUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ARTNSDate+ARTUtil.m"; path = "Source/ARTNSDate+ARTUtil.m"; sourceTree = "<group>"; };
+		110D41E31E1FA077909ADC8EC01947F2 /* ARTLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTLog.m; path = Source/ARTLog.m; sourceTree = "<group>"; };
+		111F09D2019097CC8F03722B982984D5 /* MessagePackPacker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MessagePackPacker.m; path = Pod/Classes/MessagePackPacker.m; sourceTree = "<group>"; };
+		1225B2C77FF4131B5C3BFAA2AD087EA3 /* ARTCrypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTCrypto.h; path = Source/ARTCrypto.h; sourceTree = "<group>"; };
+		12CF6C9D32C6A0953BBECAAB3BF6293D /* vrefbuffer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = vrefbuffer.c; path = Pod/Classes/msgpack_src/vrefbuffer.c; sourceTree = "<group>"; };
+		14D7C8DF0187E7189C90C4320380D4E2 /* ARTJsonLikeEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTJsonLikeEncoder.m; path = Source/ARTJsonLikeEncoder.m; sourceTree = "<group>"; };
+		15473B57684A56FC32E6D041431B203F /* ARTDefault+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTDefault+Private.h"; path = "Source/ARTDefault+Private.h"; sourceTree = "<group>"; };
+		15E15B7A38C517E1589984EC3D7C7F57 /* Pods-SchoolBusLocator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SchoolBusLocator-resources.sh"; sourceTree = "<group>"; };
+		162EAEFE8696E1664C1E3BE7A4B3F6D8 /* Pods-SchoolBusLocator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SchoolBusLocator-umbrella.h"; sourceTree = "<group>"; };
+		1647249881357D6BE5DC569F3AFE5BCC /* ARTRealtimeChannel+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTRealtimeChannel+Private.h"; path = "Source/ARTRealtimeChannel+Private.h"; sourceTree = "<group>"; };
+		16614FA9C110BD0A88A9CA84325EEA55 /* zbuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zbuffer.h; path = Pod/Classes/msgpack_src/msgpack/zbuffer.h; sourceTree = "<group>"; };
+		1818CC93C3D5ED353D54E950F9448F9B /* ARTBaseMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTBaseMessage.m; path = Source/ARTBaseMessage.m; sourceTree = "<group>"; };
+		19C5C5D36762E117365C73A9A78E189B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA0A353DD218497E2678496B1EDC7E1 /* ARTDataEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTDataEncoder.m; path = Source/ARTDataEncoder.m; sourceTree = "<group>"; };
+		1E840EF22C441ED6DB2F84D2314700B9 /* ARTRestPresence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTRestPresence.m; path = Source/ARTRestPresence.m; sourceTree = "<group>"; };
+		213BDB71C57F33A0F7B510580512D29F /* NSDictionary+MessagePack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MessagePack.m"; path = "Pod/Classes/NSDictionary+MessagePack.m"; sourceTree = "<group>"; };
+		23A94E9C3CFA3CA3B18F34FAE0C5F60A /* ARTDefault.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTDefault.h; path = Source/ARTDefault.h; sourceTree = "<group>"; };
+		26572A597569F47A9CED17068F7C895C /* ARTCrypto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTCrypto.m; path = Source/ARTCrypto.m; sourceTree = "<group>"; };
+		265AEA0541E76F333B85DBF20EECB82E /* NSNull+MessagePack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNull+MessagePack.h"; path = "Pod/Classes/NSNull+MessagePack.h"; sourceTree = "<group>"; };
+		28CA73B99F55416AFA2B582DAD3A0CB1 /* pack_template.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pack_template.h; path = Pod/Classes/msgpack_src/msgpack/pack_template.h; sourceTree = "<group>"; };
+		2E3BB461BCE799F3FBAC34567EF13D48 /* ARTClientOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTClientOptions.m; path = Source/ARTClientOptions.m; sourceTree = "<group>"; };
+		2FB24F365FEBC2EDF72B4C960AF588DF /* NSNumber+MessagePack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+MessagePack.h"; path = "Pod/Classes/NSNumber+MessagePack.h"; sourceTree = "<group>"; };
+		31D0D5DA45A611416AFBCEF0B56C012A /* AblyRealtime.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AblyRealtime.xcconfig; sourceTree = "<group>"; };
+		333FDA87E52297C431157E198DCEBFDD /* ARTClientOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTClientOptions.h; path = Source/ARTClientOptions.h; sourceTree = "<group>"; };
+		3362246F453693EC181121AFE4206F74 /* ARTConnectionDetails+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTConnectionDetails+Private.h"; path = "Source/ARTConnectionDetails+Private.h"; sourceTree = "<group>"; };
+		350BE6788A479DAEC35D74A4324D1F1F /* object.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = object.h; path = Pod/Classes/msgpack_src/msgpack/object.h; sourceTree = "<group>"; };
+		381FA9C24159F25E42BD9AE3CD8A3335 /* ARTConnectionDetails.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTConnectionDetails.m; path = Source/ARTConnectionDetails.m; sourceTree = "<group>"; };
+		3CAD77FBD272A8A36D4A90825B9DAE93 /* CompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CompatibilityMacros.h; path = Source/CompatibilityMacros.h; sourceTree = "<group>"; };
+		3D43F00475D0C2CC181BE8D511F908F3 /* version.c */ = {isa = PBXFileReference; includeInIndex = 1; name = version.c; path = Pod/Classes/msgpack_src/version.c; sourceTree = "<group>"; };
+		401B1B4E9EF32AFA0494CB2F382BF1DF /* MessagePack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MessagePack.h; path = Pod/Classes/MessagePack.h; sourceTree = "<group>"; };
+		437878D644C1C9A20CC7CD25B9A2F614 /* NSData+MessagePack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+MessagePack.m"; path = "Pod/Classes/NSData+MessagePack.m"; sourceTree = "<group>"; };
+		451DD0A7709D1584B117BC2624C1E794 /* Pods-SchoolBusLocator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SchoolBusLocator-frameworks.sh"; sourceTree = "<group>"; };
+		4662FFFB9E596DEF7ECF3CA63886B397 /* ARTStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTStatus.m; path = Source/ARTStatus.m; sourceTree = "<group>"; };
+		46F759AC7E19BBFAD9FD0DCD38CEFA87 /* ARTMsgpackEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTMsgpackEncoder.m; path = Source/ARTMsgpackEncoder.m; sourceTree = "<group>"; };
+		48A4B8FCA6B6AD60C7B9F4BCB437EC78 /* zone.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zone.c; path = Pod/Classes/msgpack_src/zone.c; sourceTree = "<group>"; };
+		49C3912C35ECE6AFB038A619B99C8DAB /* ARTTokenRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTTokenRequest.m; path = Source/ARTTokenRequest.m; sourceTree = "<group>"; };
+		49FEDE3274DD17083B49F721B0B39A85 /* SocketRocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SocketRocket.h; path = SocketRocket/SocketRocket.h; sourceTree = "<group>"; };
+		4B202972B5627608C728BBFD57AD0852 /* Pods-SchoolBusLocator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SchoolBusLocator-acknowledgements.plist"; sourceTree = "<group>"; };
+		4B713B712C947524C2A761AFE4C53002 /* Pods-SchoolBusLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SchoolBusLocator.release.xcconfig"; sourceTree = "<group>"; };
+		4E26E75675B2E4E0AB6139580BA89D6E /* MessagePackParser+Streaming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MessagePackParser+Streaming.h"; path = "Pod/Classes/MessagePackParser+Streaming.h"; sourceTree = "<group>"; };
+		4EBE528A89EFD682200F42C98AA306BB /* pack_define.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pack_define.h; path = Pod/Classes/msgpack_src/msgpack/pack_define.h; sourceTree = "<group>"; };
+		4EE1A13B5BC8D930398CD97F9351F6C6 /* ARTQueuedMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTQueuedMessage.h; path = Source/ARTQueuedMessage.h; sourceTree = "<group>"; };
+		50481F536BED296518FB88D17D24F683 /* msgpack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = msgpack.h; path = Pod/Classes/msgpack_src/msgpack.h; sourceTree = "<group>"; };
+		518255E67634CA09BF8E409B35AEAF40 /* unpack_define.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unpack_define.h; path = Pod/Classes/msgpack_src/msgpack/unpack_define.h; sourceTree = "<group>"; };
+		534EC37781539DBB6122846C06F06A2A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5449DC14097D89C37E6D40BAE893D1F8 /* ARTRealtimeTransport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTRealtimeTransport.m; path = Source/ARTRealtimeTransport.m; sourceTree = "<group>"; };
+		547BC73A2550E01F2082056E6600B066 /* ARTRestChannels.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTRestChannels.m; path = Source/ARTRestChannels.m; sourceTree = "<group>"; };
+		556B140E7B0865F23F993ABC78B7FA7D /* SocketRocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SocketRocket-dummy.m"; sourceTree = "<group>"; };
+		56095A58E12EDF4B873ECFE803E0534E /* ARTPresence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTPresence.m; path = Source/ARTPresence.m; sourceTree = "<group>"; };
+		58C4869DAF75F39AA29E778989A1EEC2 /* ARTRestPresence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTRestPresence.h; path = Source/ARTRestPresence.h; sourceTree = "<group>"; };
+		5A5DF819C9735FFFC29B7503B669A1C4 /* ARTChannels.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTChannels.m; path = Source/ARTChannels.m; sourceTree = "<group>"; };
+		5AF6D6CAD1EEF6759BE080118A8B9680 /* zone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zone.h; path = Pod/Classes/msgpack_src/msgpack/zone.h; sourceTree = "<group>"; };
+		5B34F8B06D48F9846DC34D21E7851377 /* msgpack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = msgpack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA2B20E3B1098389FD079961F3D2744 /* ARTRest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTRest.h; path = Source/ARTRest.h; sourceTree = "<group>"; };
+		5FBD324652B4C68B3E8479C400909915 /* AblyRealtime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AblyRealtime.framework; path = AblyRealtime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61A6852423B2E675CC6CB477A9C1412F /* ARTPresenceMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTPresenceMessage.h; path = Source/ARTPresenceMessage.h; sourceTree = "<group>"; };
+		622DFF9389E7961BFA3630BB99A59378 /* ARTStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTStatus.h; path = Source/ARTStatus.h; sourceTree = "<group>"; };
+		63596B9A238C1F7CA36FBA05B0694C4C /* ARTRealtimeChannels.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTRealtimeChannels.h; path = Source/ARTRealtimeChannels.h; sourceTree = "<group>"; };
+		635BEFC9DFB0B466BE524C2F9DD40108 /* ARTEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTEncoder.h; path = Source/ARTEncoder.h; sourceTree = "<group>"; };
+		63770DD2CE40ECD401968FACF4B18A77 /* ARTJsonEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTJsonEncoder.h; path = Source/ARTJsonEncoder.h; sourceTree = "<group>"; };
+		64309230E0D023C99EDFE92A482EC8B2 /* ARTChannels.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTChannels.h; path = Source/ARTChannels.h; sourceTree = "<group>"; };
+		65679924D869BE7E88C58F164AC911F7 /* ARTPresenceMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTPresenceMap.h; path = Source/ARTPresenceMap.h; sourceTree = "<group>"; };
+		666238B895AEE707A81C7DC3F226294D /* msgpack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = msgpack.modulemap; sourceTree = "<group>"; };
+		68F96D887AEEEA48B689566E5E44C2FE /* ARTMsgpackEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTMsgpackEncoder.h; path = Source/ARTMsgpackEncoder.h; sourceTree = "<group>"; };
+		69BDC6210D1CA6CE1AB4EB1CE54851CF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		6B930E68FDB9D336BEEA6AB04C86F84E /* ARTRest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTRest.m; path = Source/ARTRest.m; sourceTree = "<group>"; };
+		6C06BA46F4DC36322E78429C674DD4B1 /* ARTMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTMessage.m; path = Source/ARTMessage.m; sourceTree = "<group>"; };
+		6CB805AECD5FCFBEE8455A767CC05874 /* ARTAuth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTAuth.m; path = Source/ARTAuth.m; sourceTree = "<group>"; };
+		6E4C5DA7A2D674F8BED380BAC1920D22 /* ARTFallback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTFallback.m; path = Source/ARTFallback.m; sourceTree = "<group>"; };
+		6E6756108745060EC26B9FA8355454E4 /* ARTRealtime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTRealtime.m; path = Source/ARTRealtime.m; sourceTree = "<group>"; };
+		6E81979F021EC7DF22BDBE58E2255221 /* ARTRealtime+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTRealtime+Private.h"; path = "Source/ARTRealtime+Private.h"; sourceTree = "<group>"; };
+		6EC6CAABC92DB2703C4DD033DAF749DF /* objectc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = objectc.c; path = Pod/Classes/msgpack_src/objectc.c; sourceTree = "<group>"; };
+		723F19F4E8B9CAC78AB71D5CD6592418 /* SRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
+		73E473EF6AC980BA7E2ADE62F7824DFB /* ARTEventEmitter+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTEventEmitter+Private.h"; path = "Source/ARTEventEmitter+Private.h"; sourceTree = "<group>"; };
+		7459F6A86F87306FCE80EA63CE240410 /* NSString+MessagePack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MessagePack.h"; path = "Pod/Classes/NSString+MessagePack.h"; sourceTree = "<group>"; };
+		761081C021DDAD4CCA3C8C780274EB1D /* ARTURLSessionServerTrust.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTURLSessionServerTrust.m; path = Source/ARTURLSessionServerTrust.m; sourceTree = "<group>"; };
+		7617902FB2577E919B7318FFEDF4017F /* SocketRocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.xcconfig; sourceTree = "<group>"; };
+		7779FABAB7D795FCF0FC0EC1C571E46C /* NSDictionary+MessagePack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MessagePack.h"; path = "Pod/Classes/NSDictionary+MessagePack.h"; sourceTree = "<group>"; };
+		78B55EEE5B0DE5CC389D7B8AEC7F4227 /* ARTTokenParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTTokenParams.h; path = Source/ARTTokenParams.h; sourceTree = "<group>"; };
+		790484AB531C05586134815207005022 /* SocketRocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SocketRocket.modulemap; sourceTree = "<group>"; };
+		7A9464FF2E78CB40993C172B23D15E21 /* NSNumber+MessagePack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+MessagePack.m"; path = "Pod/Classes/NSNumber+MessagePack.m"; sourceTree = "<group>"; };
+		7ABD75D7123F2F90CD11B9574E0DAE4B /* ARTPresenceMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTPresenceMap.m; path = Source/ARTPresenceMap.m; sourceTree = "<group>"; };
+		7BFB93780058AACCAAB90B5EF5044E43 /* SocketRocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-umbrella.h"; sourceTree = "<group>"; };
+		7D68BB108FC824256326242C7B3BE0FA /* ARTRealtimeTransport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTRealtimeTransport.h; path = Source/ARTRealtimeTransport.h; sourceTree = "<group>"; };
+		7E7F60B96721C6CC9A4BE268472C0FF0 /* ARTAuth+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTAuth+Private.h"; path = "Source/ARTAuth+Private.h"; sourceTree = "<group>"; };
+		80016AE6B611241D52E1E02BB2A36622 /* ARTNSArray+ARTFunctional.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTNSArray+ARTFunctional.h"; path = "Source/ARTNSArray+ARTFunctional.h"; sourceTree = "<group>"; };
+		8077BD38FA68193F23BB3CC06AF69399 /* ARTProtocolMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTProtocolMessage.h; path = Source/ARTProtocolMessage.h; sourceTree = "<group>"; };
+		8151D31176AA3FDB8A6A39AF8311FCB4 /* ARTStats.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTStats.m; path = Source/ARTStats.m; sourceTree = "<group>"; };
+		816BEF5B4CE245E639CDA00A9016A565 /* ARTStats.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTStats.h; path = Source/ARTStats.h; sourceTree = "<group>"; };
+		84212A75C40C84602DAD1BCFBCD2A34C /* AblyRealtime-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AblyRealtime-prefix.pch"; sourceTree = "<group>"; };
+		84D599D2CD29C1D3BC24C440C1963F1D /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		886C5ABF32BF48FC7DE021C587128EA7 /* ARTAuthOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTAuthOptions.h; path = Source/ARTAuthOptions.h; sourceTree = "<group>"; };
+		88EC58EC3C275532C8393D872C1C58CA /* ARTRealtimePresence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTRealtimePresence.h; path = Source/ARTRealtimePresence.h; sourceTree = "<group>"; };
+		8B47B44D3EE9B2ED8C5C697E256BD91F /* ARTQueuedMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTQueuedMessage.m; path = Source/ARTQueuedMessage.m; sourceTree = "<group>"; };
+		8D0FA422FDA8C455E7DE3FBF48C56BA1 /* ARTDataQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTDataQuery.h; path = Source/ARTDataQuery.h; sourceTree = "<group>"; };
+		8D42A5E527D3A8DA597149B7486C53FD /* ARTChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTChannel.m; path = Source/ARTChannel.m; sourceTree = "<group>"; };
+		8F513CE3BA2B77C81F8F046F0495B7A5 /* AblyRealtime.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AblyRealtime.modulemap; sourceTree = "<group>"; };
+		90B7D31BCFF917AA37F98CB069F2AD76 /* ARTDataEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTDataEncoder.h; path = Source/ARTDataEncoder.h; sourceTree = "<group>"; };
+		914344FFD4F73FDE4BF11B4DB6D7BD2B /* sbuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sbuffer.h; path = Pod/Classes/msgpack_src/msgpack/sbuffer.h; sourceTree = "<group>"; };
+		91610AEF77C34E1A9919D9AFD1CFAAAD /* NSArray+MessagePack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MessagePack.m"; path = "Pod/Classes/NSArray+MessagePack.m"; sourceTree = "<group>"; };
+		91A641E227667F9E914218962BC6AB73 /* ARTClientOptions+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTClientOptions+Private.h"; path = "Source/ARTClientOptions+Private.h"; sourceTree = "<group>"; };
+		91AB2BD35225956429BEFF03F4F83B6F /* MessagePackParser+Streaming.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MessagePackParser+Streaming.m"; path = "Pod/Classes/MessagePackParser+Streaming.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		949D2C0188DC14CA776DE0B1FC8D8AED /* msgpack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = msgpack.xcconfig; sourceTree = "<group>"; };
+		962ABF043EC1D7C54996F03BB120E20B /* NSArray+MessagePack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MessagePack.h"; path = "Pod/Classes/NSArray+MessagePack.h"; sourceTree = "<group>"; };
+		967AF1F1CB1D88653C65EA4FB3CC4949 /* AblyRealtime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AblyRealtime.h; path = Source/AblyRealtime.h; sourceTree = "<group>"; };
+		970B75DED225200F3235D40A37DE8DD9 /* NSString+MessagePack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MessagePack.m"; path = "Pod/Classes/NSString+MessagePack.m"; sourceTree = "<group>"; };
+		98D84931A219C8CB6BCC5F72C3FBFF7D /* Pods_SchoolBusLocator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SchoolBusLocator.framework; path = "Pods-SchoolBusLocator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99A5C1C2A80D2FD5B80CE118553D8AD5 /* ARTFallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTFallback.h; path = Source/ARTFallback.h; sourceTree = "<group>"; };
+		99E2AF6199AEA238A71387B46DA79F3F /* ARTRealtimeChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTRealtimeChannel.h; path = Source/ARTRealtimeChannel.h; sourceTree = "<group>"; };
+		9A765C07808A55D1D1D55626D48B0A66 /* ARTMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTMessage.h; path = Source/ARTMessage.h; sourceTree = "<group>"; };
+		9B28F8080DB789A116356A20BBF42FEF /* ARTDataQuery+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTDataQuery+Private.h"; path = "Source/ARTDataQuery+Private.h"; sourceTree = "<group>"; };
+		9BC3DA8D686676458AC05747D7A40AAB /* ARTRealtimePresence+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTRealtimePresence+Private.h"; path = "Source/ARTRealtimePresence+Private.h"; sourceTree = "<group>"; };
+		A18BD24B14896396F5A2EEE2B803DD2B /* ARTProtocolMessage+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTProtocolMessage+Private.h"; path = "Source/ARTProtocolMessage+Private.h"; sourceTree = "<group>"; };
+		A46D15CD4D4BF62F3BDB4C350C286C5A /* ARTNSArray+ARTFunctional.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ARTNSArray+ARTFunctional.m"; path = "Source/ARTNSArray+ARTFunctional.m"; sourceTree = "<group>"; };
+		A4A321A6D05A5B36AEDA121A53E4A128 /* NSData+MessagePack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+MessagePack.h"; path = "Pod/Classes/NSData+MessagePack.h"; sourceTree = "<group>"; };
+		A4D7D2C09813180993A628231212508B /* ARTJsonLikeEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTJsonLikeEncoder.h; path = Source/ARTJsonLikeEncoder.h; sourceTree = "<group>"; };
+		A4EEA247EB3D38EAD4007A616B30D386 /* unpack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unpack.h; path = Pod/Classes/msgpack_src/msgpack/unpack.h; sourceTree = "<group>"; };
+		A533597642C34DF102BEB65B53E56E96 /* ARTChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTChannel.h; path = Source/ARTChannel.h; sourceTree = "<group>"; };
+		A5D8EDCFA5159055D48B5E65E4287BB6 /* ARTChannel+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTChannel+Private.h"; path = "Source/ARTChannel+Private.h"; sourceTree = "<group>"; };
+		A66B6195EE9CBD2D7F2268CD52D1D9BC /* ARTAuthOptions+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTAuthOptions+Private.h"; path = "Source/ARTAuthOptions+Private.h"; sourceTree = "<group>"; };
+		A8AF3B38049A7D36BB2848A4A5E16EC0 /* ARTChannels+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTChannels+Private.h"; path = "Source/ARTChannels+Private.h"; sourceTree = "<group>"; };
+		A8EBCA4A3CE8ABC895936FD0DB54A5B2 /* pack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pack.h; path = Pod/Classes/msgpack_src/msgpack/pack.h; sourceTree = "<group>"; };
+		ABFFDEEF7C0F2047B25F91A00E524181 /* ARTRestChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTRestChannel.m; path = Source/ARTRestChannel.m; sourceTree = "<group>"; };
+		ADB5178F4223DB624C8D4AC13EB000D8 /* ARTTokenParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTTokenParams.m; path = Source/ARTTokenParams.m; sourceTree = "<group>"; };
+		B0531D0EC7C4E1C3334FD93FF6EACF89 /* ARTDataQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTDataQuery.m; path = Source/ARTDataQuery.m; sourceTree = "<group>"; };
+		B06BC10E3318E2C290F8263BD5EFD32B /* ARTAuthOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTAuthOptions.m; path = Source/ARTAuthOptions.m; sourceTree = "<group>"; };
+		B0E452108F1DB0D6585A87BC6D7AEAB7 /* ARTProtocolMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTProtocolMessage.m; path = Source/ARTProtocolMessage.m; sourceTree = "<group>"; };
+		B46F5A74BD596C920878EC0E03D0079F /* ARTPresence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTPresence.h; path = Source/ARTPresence.h; sourceTree = "<group>"; };
+		B4F709ACB5677D60F585C11E8725CC58 /* ARTPaginatedResult+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTPaginatedResult+Private.h"; path = "Source/ARTPaginatedResult+Private.h"; sourceTree = "<group>"; };
+		B5FF3E6FD87B60F30FF1EF10580FB674 /* ARTRealtimePresence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTRealtimePresence.m; path = Source/ARTRealtimePresence.m; sourceTree = "<group>"; };
+		B8D2B6244438849BD0DEA30D6EFE4F78 /* ARTRest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTRest+Private.h"; path = "Source/ARTRest+Private.h"; sourceTree = "<group>"; };
+		BAA1646C486F0C185195DC10B26F8C3E /* version_master.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version_master.h; path = Pod/Classes/msgpack_src/msgpack/version_master.h; sourceTree = "<group>"; };
+		BB20E6D992D86178A8168711163B05F8 /* AblyRealtime-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AblyRealtime-dummy.m"; sourceTree = "<group>"; };
+		BC20921CA75A6BD725A4892CAC5DF92D /* ARTRestPresence+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTRestPresence+Private.h"; path = "Source/ARTRestPresence+Private.h"; sourceTree = "<group>"; };
+		BF2C5B7EFE8C606C2CA449B01C3FF2DF /* ARTNSDate+ARTUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTNSDate+ARTUtil.h"; path = "Source/ARTNSDate+ARTUtil.h"; sourceTree = "<group>"; };
+		C0E520A2A95EE9C84D4500A84C7AA31D /* sysdep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sysdep.h; path = Pod/Classes/msgpack_src/msgpack/sysdep.h; sourceTree = "<group>"; };
+		C1E07B91A7B3912C85BC42FF193039A4 /* ARTBaseMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTBaseMessage.h; path = Source/ARTBaseMessage.h; sourceTree = "<group>"; };
+		C3CCF69FEA87E7664E0EE0ACDE38E929 /* Pods-SchoolBusLocator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SchoolBusLocator-dummy.m"; sourceTree = "<group>"; };
+		C52BBF46188273442D82B484375E39B2 /* ARTDefault.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTDefault.m; path = Source/ARTDefault.m; sourceTree = "<group>"; };
+		C609CE546B268A52DCC01900ABAA09BE /* SRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
+		C86BE3909CB13D621115B50E8EAE373D /* ARTEventEmitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTEventEmitter.h; path = Source/ARTEventEmitter.h; sourceTree = "<group>"; };
+		CA29BE4735EADA8E591CA90DC56CCA8C /* msgpack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "msgpack-dummy.m"; sourceTree = "<group>"; };
+		CBD113DC320CC90BA2A1809ADA498B90 /* ARTRealtimeChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTRealtimeChannel.m; path = Source/ARTRealtimeChannel.m; sourceTree = "<group>"; };
+		CDA16B775938EC60DDD28FF5F2B3B769 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC0C701D291F81C94E4BED019BD8D7C /* ARTCrypto+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTCrypto+Private.h"; path = "Source/ARTCrypto+Private.h"; sourceTree = "<group>"; };
+		CF19C7710D0DCD84892D88255103E112 /* unpack.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unpack.c; path = Pod/Classes/msgpack_src/unpack.c; sourceTree = "<group>"; };
+		D5C3F6C3B6D833C8F988B4D6E3578C9F /* ARTTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTTypes.m; path = Source/ARTTypes.m; sourceTree = "<group>"; };
+		D742C52A52DCEF0FA2BC08E73173CECB /* unpack_template.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unpack_template.h; path = Pod/Classes/msgpack_src/msgpack/unpack_template.h; sourceTree = "<group>"; };
+		D7B50A6FD94C26418F9F12070CC72358 /* ARTConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTConnection.m; path = Source/ARTConnection.m; sourceTree = "<group>"; };
+		DAC436C69DE8D744B44407CB48696EBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DAF5461D7B5A0261792BB019D4C66B60 /* ARTRestChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTRestChannel.h; path = Source/ARTRestChannel.h; sourceTree = "<group>"; };
+		DBDB5BB419BD70AF6DE2D09B0B18E525 /* ARTRealtimeChannels.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTRealtimeChannels.m; path = Source/ARTRealtimeChannels.m; sourceTree = "<group>"; };
+		DD38F84EFFECDC223E79617C98EF7B12 /* ARTBaseMessage+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTBaseMessage+Private.h"; path = "Source/ARTBaseMessage+Private.h"; sourceTree = "<group>"; };
+		DEC1A983AE67E81022E5C9D36E6C73A5 /* ARTPaginatedResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTPaginatedResult.h; path = Source/ARTPaginatedResult.h; sourceTree = "<group>"; };
+		E02B814D234AED53C2CF0789F13E1944 /* ARTConnectionDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTConnectionDetails.h; path = Source/ARTConnectionDetails.h; sourceTree = "<group>"; };
+		E099B48A5C8CC2B5E03AD40135CCCA37 /* vrefbuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vrefbuffer.h; path = Pod/Classes/msgpack_src/msgpack/vrefbuffer.h; sourceTree = "<group>"; };
+		E4C8D877519C16ED1EFFDF152E6D08AE /* ARTLog+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTLog+Private.h"; path = "Source/ARTLog+Private.h"; sourceTree = "<group>"; };
+		E4D386CE6E93093B0FD478CCD548C716 /* ARTPresence+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTPresence+Private.h"; path = "Source/ARTPresence+Private.h"; sourceTree = "<group>"; };
+		E4F1EF9D01EFEB197AC935B7A2EBD72D /* ARTHttp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTHttp.m; path = Source/ARTHttp.m; sourceTree = "<group>"; };
+		E5D8F4DB90E403BCDE108D109DCB513F /* ARTTokenDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTTokenDetails.h; path = Source/ARTTokenDetails.h; sourceTree = "<group>"; };
+		E6BAD67928426BF75119C65FB5485000 /* ARTPaginatedResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTPaginatedResult.m; path = Source/ARTPaginatedResult.m; sourceTree = "<group>"; };
+		E7C07E409F3DC7725FE24BB5321A1117 /* msgpack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = msgpack.framework; path = msgpack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E375ABE94F94A48C3FE9FA2378AD69 /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SocketRocket.framework; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA881416D325AF2ED619C3A4C86891B2 /* ARTRestChannels.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTRestChannels.h; path = Source/ARTRestChannels.h; sourceTree = "<group>"; };
+		EB73E4CB98464FE6DFF3D323DE9689F8 /* MessagePackPacker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MessagePackPacker.h; path = Pod/Classes/MessagePackPacker.h; sourceTree = "<group>"; };
+		EC2EA35BCF097A93EB1F0C753B445A22 /* ARTWebSocketTransport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTWebSocketTransport.h; path = Source/ARTWebSocketTransport.h; sourceTree = "<group>"; };
+		EC8D099A7850C3B8258468EEF081B65F /* ARTRealtimeChannels+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTRealtimeChannels+Private.h"; path = "Source/ARTRealtimeChannels+Private.h"; sourceTree = "<group>"; };
+		EEA2F75B27E757EE95ED982E061F3165 /* ARTChannelOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTChannelOptions.m; path = Source/ARTChannelOptions.m; sourceTree = "<group>"; };
+		EF05683AF1D35D9C713C952E4E6745A4 /* SocketRocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-prefix.pch"; sourceTree = "<group>"; };
+		EF28A68D9BD99CBC8B6FEC92194D68AC /* ARTPresenceMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTPresenceMessage.m; path = Source/ARTPresenceMessage.m; sourceTree = "<group>"; };
+		EF44BBFAF0F37C9B3E642FE4C12DA7D4 /* ARTTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTTypes.h; path = Source/ARTTypes.h; sourceTree = "<group>"; };
+		EF59E21E618B970D9C4C575310E4CC73 /* ARTChannelOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTChannelOptions.h; path = Source/ARTChannelOptions.h; sourceTree = "<group>"; };
+		F15121FAF77C7F9540C9B87599524F03 /* ARTRestChannel+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTRestChannel+Private.h"; path = "Source/ARTRestChannel+Private.h"; sourceTree = "<group>"; };
+		F41AF09BBE7F546D1BE58009F7A29F50 /* msgpack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "msgpack-prefix.pch"; sourceTree = "<group>"; };
+		F65F480A07C44B7ED6489715F0F2D910 /* MessagePackParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MessagePackParser.m; path = Pod/Classes/MessagePackParser.m; sourceTree = "<group>"; };
+		F68B446433CB339237A2CAE2FDD5E2AD /* ARTTokenParams+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTTokenParams+Private.h"; path = "Source/ARTTokenParams+Private.h"; sourceTree = "<group>"; };
+		F68D5725A4AFDA8D9A603209FBA71FBC /* ARTNSDictionary+ARTDictionaryUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTNSDictionary+ARTDictionaryUtil.h"; path = "Source/ARTNSDictionary+ARTDictionaryUtil.h"; sourceTree = "<group>"; };
+		F729BC1E3371C4F27409DEB727700BE8 /* ARTWebSocketTransport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTWebSocketTransport.m; path = Source/ARTWebSocketTransport.m; sourceTree = "<group>"; };
+		F769376DA5BE88725AE1E6980F923CD4 /* ARTJsonEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTJsonEncoder.m; path = Source/ARTJsonEncoder.m; sourceTree = "<group>"; };
+		F7772B734C23B5E5E9DB5262EE9F5776 /* ARTAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTAuth.h; path = Source/ARTAuth.h; sourceTree = "<group>"; };
+		FA6DB430710BFF7ACABDBA4CCEEC6C7F /* ARTOSReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTOSReachability.h; path = Source/ARTOSReachability.h; sourceTree = "<group>"; };
+		FBCADBAF11F89D021C1DE686E5E622A2 /* ARTConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTConnection.h; path = Source/ARTConnection.h; sourceTree = "<group>"; };
+		FD86D3EAC62D980926436DFD006A72CB /* ARTTokenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTTokenRequest.h; path = Source/ARTTokenRequest.h; sourceTree = "<group>"; };
+		FE5E331710E338A19C3481A9B0ABEE6A /* ARTTokenDetails.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ARTTokenDetails.m; path = Source/ARTTokenDetails.m; sourceTree = "<group>"; };
+		FE6B81C8916E054B1B376F5EDA5B18BC /* ARTURLSessionServerTrust.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTURLSessionServerTrust.h; path = Source/ARTURLSessionServerTrust.h; sourceTree = "<group>"; };
+		FF98F7DED0E8F3D005DD533EF8614575 /* NSNull+MessagePack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNull+MessagePack.m"; path = "Pod/Classes/NSNull+MessagePack.m"; sourceTree = "<group>"; };
+		FFE2572BF148EB05ED050A5DF0B52032 /* ARTRealtime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARTRealtime.h; path = Source/ARTRealtime.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ECEC4D56323E1221FE9F8E5D16F766E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED85B394421BE72EE4CEF4CBABEE89FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		376461481F325FAD88ED1ECDEBA9806D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DB8B018091DD073F1093D0C39A415D8 /* Foundation.framework in Frameworks */,
+				94D94DBCC071ABC8AFECC4E1DE23477B /* msgpack.framework in Frameworks */,
+				B82C4CEDB140781FEE7B67EE3871F3E9 /* SocketRocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FC856E79A92C23777E7FD8F02CDC932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B40BBE39ED8899D8480C120C67269A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BA49FD55589658B8632C7D8B9F44EDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59A60B3B9A1DE5A26D2738E1CBC4E5FA /* CFNetwork.framework in Frameworks */,
+				2CAAE5BEDC043B09CD1241C809BDD79B /* Foundation.framework in Frameworks */,
+				94941320303004F585DF25D1306C976F /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D78587B4B7C9A8DD209D77EF96DE730 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF39113CAD8813AEC513BAB43A10FCB0 /* Pods-SchoolBusLocator */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		25E604767716674E20587F33DBF46EE9 /* AblyRealtime */ = {
+			isa = PBXGroup;
+			children = (
+				967AF1F1CB1D88653C65EA4FB3CC4949 /* AblyRealtime.h */,
+				F7772B734C23B5E5E9DB5262EE9F5776 /* ARTAuth.h */,
+				6CB805AECD5FCFBEE8455A767CC05874 /* ARTAuth.m */,
+				7E7F60B96721C6CC9A4BE268472C0FF0 /* ARTAuth+Private.h */,
+				886C5ABF32BF48FC7DE021C587128EA7 /* ARTAuthOptions.h */,
+				B06BC10E3318E2C290F8263BD5EFD32B /* ARTAuthOptions.m */,
+				A66B6195EE9CBD2D7F2268CD52D1D9BC /* ARTAuthOptions+Private.h */,
+				C1E07B91A7B3912C85BC42FF193039A4 /* ARTBaseMessage.h */,
+				1818CC93C3D5ED353D54E950F9448F9B /* ARTBaseMessage.m */,
+				DD38F84EFFECDC223E79617C98EF7B12 /* ARTBaseMessage+Private.h */,
+				A533597642C34DF102BEB65B53E56E96 /* ARTChannel.h */,
+				8D42A5E527D3A8DA597149B7486C53FD /* ARTChannel.m */,
+				A5D8EDCFA5159055D48B5E65E4287BB6 /* ARTChannel+Private.h */,
+				EF59E21E618B970D9C4C575310E4CC73 /* ARTChannelOptions.h */,
+				EEA2F75B27E757EE95ED982E061F3165 /* ARTChannelOptions.m */,
+				64309230E0D023C99EDFE92A482EC8B2 /* ARTChannels.h */,
+				5A5DF819C9735FFFC29B7503B669A1C4 /* ARTChannels.m */,
+				A8AF3B38049A7D36BB2848A4A5E16EC0 /* ARTChannels+Private.h */,
+				333FDA87E52297C431157E198DCEBFDD /* ARTClientOptions.h */,
+				2E3BB461BCE799F3FBAC34567EF13D48 /* ARTClientOptions.m */,
+				91A641E227667F9E914218962BC6AB73 /* ARTClientOptions+Private.h */,
+				FBCADBAF11F89D021C1DE686E5E622A2 /* ARTConnection.h */,
+				D7B50A6FD94C26418F9F12070CC72358 /* ARTConnection.m */,
+				05E27E92FCBE771F8B522FA0897B9918 /* ARTConnection+Private.h */,
+				E02B814D234AED53C2CF0789F13E1944 /* ARTConnectionDetails.h */,
+				381FA9C24159F25E42BD9AE3CD8A3335 /* ARTConnectionDetails.m */,
+				3362246F453693EC181121AFE4206F74 /* ARTConnectionDetails+Private.h */,
+				1225B2C77FF4131B5C3BFAA2AD087EA3 /* ARTCrypto.h */,
+				26572A597569F47A9CED17068F7C895C /* ARTCrypto.m */,
+				CEC0C701D291F81C94E4BED019BD8D7C /* ARTCrypto+Private.h */,
+				90B7D31BCFF917AA37F98CB069F2AD76 /* ARTDataEncoder.h */,
+				1BA0A353DD218497E2678496B1EDC7E1 /* ARTDataEncoder.m */,
+				8D0FA422FDA8C455E7DE3FBF48C56BA1 /* ARTDataQuery.h */,
+				B0531D0EC7C4E1C3334FD93FF6EACF89 /* ARTDataQuery.m */,
+				9B28F8080DB789A116356A20BBF42FEF /* ARTDataQuery+Private.h */,
+				23A94E9C3CFA3CA3B18F34FAE0C5F60A /* ARTDefault.h */,
+				C52BBF46188273442D82B484375E39B2 /* ARTDefault.m */,
+				15473B57684A56FC32E6D041431B203F /* ARTDefault+Private.h */,
+				635BEFC9DFB0B466BE524C2F9DD40108 /* ARTEncoder.h */,
+				C86BE3909CB13D621115B50E8EAE373D /* ARTEventEmitter.h */,
+				080680C019DD734F73531AB5B4BB06E2 /* ARTEventEmitter.m */,
+				73E473EF6AC980BA7E2ADE62F7824DFB /* ARTEventEmitter+Private.h */,
+				99A5C1C2A80D2FD5B80CE118553D8AD5 /* ARTFallback.h */,
+				6E4C5DA7A2D674F8BED380BAC1920D22 /* ARTFallback.m */,
+				094BF5A5305DDCE6818745E626643FB5 /* ARTHttp.h */,
+				E4F1EF9D01EFEB197AC935B7A2EBD72D /* ARTHttp.m */,
+				63770DD2CE40ECD401968FACF4B18A77 /* ARTJsonEncoder.h */,
+				F769376DA5BE88725AE1E6980F923CD4 /* ARTJsonEncoder.m */,
+				A4D7D2C09813180993A628231212508B /* ARTJsonLikeEncoder.h */,
+				14D7C8DF0187E7189C90C4320380D4E2 /* ARTJsonLikeEncoder.m */,
+				082E5BF5A9FD248B20935ADBED62E8A9 /* ARTLog.h */,
+				110D41E31E1FA077909ADC8EC01947F2 /* ARTLog.m */,
+				E4C8D877519C16ED1EFFDF152E6D08AE /* ARTLog+Private.h */,
+				9A765C07808A55D1D1D55626D48B0A66 /* ARTMessage.h */,
+				6C06BA46F4DC36322E78429C674DD4B1 /* ARTMessage.m */,
+				68F96D887AEEEA48B689566E5E44C2FE /* ARTMsgpackEncoder.h */,
+				46F759AC7E19BBFAD9FD0DCD38CEFA87 /* ARTMsgpackEncoder.m */,
+				80016AE6B611241D52E1E02BB2A36622 /* ARTNSArray+ARTFunctional.h */,
+				A46D15CD4D4BF62F3BDB4C350C286C5A /* ARTNSArray+ARTFunctional.m */,
+				BF2C5B7EFE8C606C2CA449B01C3FF2DF /* ARTNSDate+ARTUtil.h */,
+				109C13EBA9EF2EB66C33B497C3A2DD68 /* ARTNSDate+ARTUtil.m */,
+				F68D5725A4AFDA8D9A603209FBA71FBC /* ARTNSDictionary+ARTDictionaryUtil.h */,
+				0FC51CD8CCE76052063861CB80191224 /* ARTNSDictionary+ARTDictionaryUtil.m */,
+				FA6DB430710BFF7ACABDBA4CCEEC6C7F /* ARTOSReachability.h */,
+				0FDB26D569DE0A6AF9B6F22B5854D38F /* ARTOSReachability.m */,
+				DEC1A983AE67E81022E5C9D36E6C73A5 /* ARTPaginatedResult.h */,
+				E6BAD67928426BF75119C65FB5485000 /* ARTPaginatedResult.m */,
+				B4F709ACB5677D60F585C11E8725CC58 /* ARTPaginatedResult+Private.h */,
+				B46F5A74BD596C920878EC0E03D0079F /* ARTPresence.h */,
+				56095A58E12EDF4B873ECFE803E0534E /* ARTPresence.m */,
+				E4D386CE6E93093B0FD478CCD548C716 /* ARTPresence+Private.h */,
+				65679924D869BE7E88C58F164AC911F7 /* ARTPresenceMap.h */,
+				7ABD75D7123F2F90CD11B9574E0DAE4B /* ARTPresenceMap.m */,
+				61A6852423B2E675CC6CB477A9C1412F /* ARTPresenceMessage.h */,
+				EF28A68D9BD99CBC8B6FEC92194D68AC /* ARTPresenceMessage.m */,
+				8077BD38FA68193F23BB3CC06AF69399 /* ARTProtocolMessage.h */,
+				B0E452108F1DB0D6585A87BC6D7AEAB7 /* ARTProtocolMessage.m */,
+				A18BD24B14896396F5A2EEE2B803DD2B /* ARTProtocolMessage+Private.h */,
+				4EE1A13B5BC8D930398CD97F9351F6C6 /* ARTQueuedMessage.h */,
+				8B47B44D3EE9B2ED8C5C697E256BD91F /* ARTQueuedMessage.m */,
+				10592535CD2A240501C7861F221F09EA /* ARTReachability.h */,
+				FFE2572BF148EB05ED050A5DF0B52032 /* ARTRealtime.h */,
+				6E6756108745060EC26B9FA8355454E4 /* ARTRealtime.m */,
+				6E81979F021EC7DF22BDBE58E2255221 /* ARTRealtime+Private.h */,
+				99E2AF6199AEA238A71387B46DA79F3F /* ARTRealtimeChannel.h */,
+				CBD113DC320CC90BA2A1809ADA498B90 /* ARTRealtimeChannel.m */,
+				1647249881357D6BE5DC569F3AFE5BCC /* ARTRealtimeChannel+Private.h */,
+				63596B9A238C1F7CA36FBA05B0694C4C /* ARTRealtimeChannels.h */,
+				DBDB5BB419BD70AF6DE2D09B0B18E525 /* ARTRealtimeChannels.m */,
+				EC8D099A7850C3B8258468EEF081B65F /* ARTRealtimeChannels+Private.h */,
+				88EC58EC3C275532C8393D872C1C58CA /* ARTRealtimePresence.h */,
+				B5FF3E6FD87B60F30FF1EF10580FB674 /* ARTRealtimePresence.m */,
+				9BC3DA8D686676458AC05747D7A40AAB /* ARTRealtimePresence+Private.h */,
+				7D68BB108FC824256326242C7B3BE0FA /* ARTRealtimeTransport.h */,
+				5449DC14097D89C37E6D40BAE893D1F8 /* ARTRealtimeTransport.m */,
+				5FA2B20E3B1098389FD079961F3D2744 /* ARTRest.h */,
+				6B930E68FDB9D336BEEA6AB04C86F84E /* ARTRest.m */,
+				B8D2B6244438849BD0DEA30D6EFE4F78 /* ARTRest+Private.h */,
+				DAF5461D7B5A0261792BB019D4C66B60 /* ARTRestChannel.h */,
+				ABFFDEEF7C0F2047B25F91A00E524181 /* ARTRestChannel.m */,
+				F15121FAF77C7F9540C9B87599524F03 /* ARTRestChannel+Private.h */,
+				EA881416D325AF2ED619C3A4C86891B2 /* ARTRestChannels.h */,
+				547BC73A2550E01F2082056E6600B066 /* ARTRestChannels.m */,
+				58C4869DAF75F39AA29E778989A1EEC2 /* ARTRestPresence.h */,
+				1E840EF22C441ED6DB2F84D2314700B9 /* ARTRestPresence.m */,
+				BC20921CA75A6BD725A4892CAC5DF92D /* ARTRestPresence+Private.h */,
+				816BEF5B4CE245E639CDA00A9016A565 /* ARTStats.h */,
+				8151D31176AA3FDB8A6A39AF8311FCB4 /* ARTStats.m */,
+				622DFF9389E7961BFA3630BB99A59378 /* ARTStatus.h */,
+				4662FFFB9E596DEF7ECF3CA63886B397 /* ARTStatus.m */,
+				E5D8F4DB90E403BCDE108D109DCB513F /* ARTTokenDetails.h */,
+				FE5E331710E338A19C3481A9B0ABEE6A /* ARTTokenDetails.m */,
+				78B55EEE5B0DE5CC389D7B8AEC7F4227 /* ARTTokenParams.h */,
+				ADB5178F4223DB624C8D4AC13EB000D8 /* ARTTokenParams.m */,
+				F68B446433CB339237A2CAE2FDD5E2AD /* ARTTokenParams+Private.h */,
+				FD86D3EAC62D980926436DFD006A72CB /* ARTTokenRequest.h */,
+				49C3912C35ECE6AFB038A619B99C8DAB /* ARTTokenRequest.m */,
+				EF44BBFAF0F37C9B3E642FE4C12DA7D4 /* ARTTypes.h */,
+				D5C3F6C3B6D833C8F988B4D6E3578C9F /* ARTTypes.m */,
+				FE6B81C8916E054B1B376F5EDA5B18BC /* ARTURLSessionServerTrust.h */,
+				761081C021DDAD4CCA3C8C780274EB1D /* ARTURLSessionServerTrust.m */,
+				EC2EA35BCF097A93EB1F0C753B445A22 /* ARTWebSocketTransport.h */,
+				F729BC1E3371C4F27409DEB727700BE8 /* ARTWebSocketTransport.m */,
+				01F5062D96EFB9A7E2A165E9248DCA68 /* ARTWebSocketTransport+Private.h */,
+				3CAD77FBD272A8A36D4A90825B9DAE93 /* CompatibilityMacros.h */,
+				C1E9158E8C08E79E3B56BDCD7C77FC02 /* Support Files */,
+			);
+			name = AblyRealtime;
+			path = AblyRealtime;
+			sourceTree = "<group>";
+		};
+		4FA3081D1573E14C15A76BAA94BE282D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1034DB822E21F2B9C27CC029F7B1FE10 /* CFNetwork.framework */,
+				DAC436C69DE8D744B44407CB48696EBC /* Foundation.framework */,
+				69BDC6210D1CA6CE1AB4EB1CE54851CF /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4FFE7D9C674675CB4FEC03A256B5BE96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25E604767716674E20587F33DBF46EE9 /* AblyRealtime */,
+				EA2F2BE6597F58073699D81CC9E5E652 /* msgpack */,
+				82236634C3F03A83A88739BE8D69654A /* SocketRocket */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		62E4AFD7791FA9017518F98328F2CF11 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDA16B775938EC60DDD28FF5F2B3B769 /* Info.plist */,
+				666238B895AEE707A81C7DC3F226294D /* msgpack.modulemap */,
+				949D2C0188DC14CA776DE0B1FC8D8AED /* msgpack.xcconfig */,
+				CA29BE4735EADA8E591CA90DC56CCA8C /* msgpack-dummy.m */,
+				F41AF09BBE7F546D1BE58009F7A29F50 /* msgpack-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/msgpack";
+			sourceTree = "<group>";
+		};
+		76AA5425486BAA1E3CB8FEC046D876C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B34F8B06D48F9846DC34D21E7851377 /* msgpack.framework */,
+				84D599D2CD29C1D3BC24C440C1963F1D /* SocketRocket.framework */,
+				4FA3081D1573E14C15A76BAA94BE282D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				76AA5425486BAA1E3CB8FEC046D876C2 /* Frameworks */,
+				4FFE7D9C674675CB4FEC03A256B5BE96 /* Pods */,
+				E268C7AE65AF1F59BAA6A764BFE8032F /* Products */,
+				0D78587B4B7C9A8DD209D77EF96DE730 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		82236634C3F03A83A88739BE8D69654A /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				49FEDE3274DD17083B49F721B0B39A85 /* SocketRocket.h */,
+				723F19F4E8B9CAC78AB71D5CD6592418 /* SRWebSocket.h */,
+				C609CE546B268A52DCC01900ABAA09BE /* SRWebSocket.m */,
+				83CEB860133BB547AAAA06E91CA9A559 /* Support Files */,
+			);
+			name = SocketRocket;
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		83CEB860133BB547AAAA06E91CA9A559 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F127A7993BE3119147749E7B20AE95B /* Info.plist */,
+				790484AB531C05586134815207005022 /* SocketRocket.modulemap */,
+				7617902FB2577E919B7318FFEDF4017F /* SocketRocket.xcconfig */,
+				556B140E7B0865F23F993ABC78B7FA7D /* SocketRocket-dummy.m */,
+				EF05683AF1D35D9C713C952E4E6745A4 /* SocketRocket-prefix.pch */,
+				7BFB93780058AACCAAB90B5EF5044E43 /* SocketRocket-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SocketRocket";
+			sourceTree = "<group>";
+		};
+		C1E9158E8C08E79E3B56BDCD7C77FC02 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F513CE3BA2B77C81F8F046F0495B7A5 /* AblyRealtime.modulemap */,
+				31D0D5DA45A611416AFBCEF0B56C012A /* AblyRealtime.xcconfig */,
+				BB20E6D992D86178A8168711163B05F8 /* AblyRealtime-dummy.m */,
+				84212A75C40C84602DAD1BCFBCD2A34C /* AblyRealtime-prefix.pch */,
+				19C5C5D36762E117365C73A9A78E189B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AblyRealtime";
+			sourceTree = "<group>";
+		};
+		E268C7AE65AF1F59BAA6A764BFE8032F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FBD324652B4C68B3E8479C400909915 /* AblyRealtime.framework */,
+				E7C07E409F3DC7725FE24BB5321A1117 /* msgpack.framework */,
+				98D84931A219C8CB6BCC5F72C3FBFF7D /* Pods_SchoolBusLocator.framework */,
+				E9E375ABE94F94A48C3FE9FA2378AD69 /* SocketRocket.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA2F2BE6597F58073699D81CC9E5E652 /* msgpack */ = {
+			isa = PBXGroup;
+			children = (
+				401B1B4E9EF32AFA0494CB2F382BF1DF /* MessagePack.h */,
+				EB73E4CB98464FE6DFF3D323DE9689F8 /* MessagePackPacker.h */,
+				111F09D2019097CC8F03722B982984D5 /* MessagePackPacker.m */,
+				101BFE9B69B215F5B75D5B741CFF2430 /* MessagePackParser.h */,
+				F65F480A07C44B7ED6489715F0F2D910 /* MessagePackParser.m */,
+				4E26E75675B2E4E0AB6139580BA89D6E /* MessagePackParser+Streaming.h */,
+				91AB2BD35225956429BEFF03F4F83B6F /* MessagePackParser+Streaming.m */,
+				50481F536BED296518FB88D17D24F683 /* msgpack.h */,
+				962ABF043EC1D7C54996F03BB120E20B /* NSArray+MessagePack.h */,
+				91610AEF77C34E1A9919D9AFD1CFAAAD /* NSArray+MessagePack.m */,
+				A4A321A6D05A5B36AEDA121A53E4A128 /* NSData+MessagePack.h */,
+				437878D644C1C9A20CC7CD25B9A2F614 /* NSData+MessagePack.m */,
+				7779FABAB7D795FCF0FC0EC1C571E46C /* NSDictionary+MessagePack.h */,
+				213BDB71C57F33A0F7B510580512D29F /* NSDictionary+MessagePack.m */,
+				265AEA0541E76F333B85DBF20EECB82E /* NSNull+MessagePack.h */,
+				FF98F7DED0E8F3D005DD533EF8614575 /* NSNull+MessagePack.m */,
+				2FB24F365FEBC2EDF72B4C960AF588DF /* NSNumber+MessagePack.h */,
+				7A9464FF2E78CB40993C172B23D15E21 /* NSNumber+MessagePack.m */,
+				7459F6A86F87306FCE80EA63CE240410 /* NSString+MessagePack.h */,
+				970B75DED225200F3235D40A37DE8DD9 /* NSString+MessagePack.m */,
+				350BE6788A479DAEC35D74A4324D1F1F /* object.h */,
+				6EC6CAABC92DB2703C4DD033DAF749DF /* objectc.c */,
+				A8EBCA4A3CE8ABC895936FD0DB54A5B2 /* pack.h */,
+				4EBE528A89EFD682200F42C98AA306BB /* pack_define.h */,
+				28CA73B99F55416AFA2B582DAD3A0CB1 /* pack_template.h */,
+				914344FFD4F73FDE4BF11B4DB6D7BD2B /* sbuffer.h */,
+				C0E520A2A95EE9C84D4500A84C7AA31D /* sysdep.h */,
+				CF19C7710D0DCD84892D88255103E112 /* unpack.c */,
+				A4EEA247EB3D38EAD4007A616B30D386 /* unpack.h */,
+				518255E67634CA09BF8E409B35AEAF40 /* unpack_define.h */,
+				D742C52A52DCEF0FA2BC08E73173CECB /* unpack_template.h */,
+				3D43F00475D0C2CC181BE8D511F908F3 /* version.c */,
+				0DD5F1238FB0F6DFEDF9D7B5697BC9D1 /* version.h */,
+				BAA1646C486F0C185195DC10B26F8C3E /* version_master.h */,
+				12CF6C9D32C6A0953BBECAAB3BF6293D /* vrefbuffer.c */,
+				E099B48A5C8CC2B5E03AD40135CCCA37 /* vrefbuffer.h */,
+				16614FA9C110BD0A88A9CA84325EEA55 /* zbuffer.h */,
+				48A4B8FCA6B6AD60C7B9F4BCB437EC78 /* zone.c */,
+				5AF6D6CAD1EEF6759BE080118A8B9680 /* zone.h */,
+				62E4AFD7791FA9017518F98328F2CF11 /* Support Files */,
+			);
+			name = msgpack;
+			path = msgpack;
+			sourceTree = "<group>";
+		};
+		FF39113CAD8813AEC513BAB43A10FCB0 /* Pods-SchoolBusLocator */ = {
+			isa = PBXGroup;
+			children = (
+				534EC37781539DBB6122846C06F06A2A /* Info.plist */,
+				0B4772C87C8822138C37B7A399C2DA96 /* Pods-SchoolBusLocator.modulemap */,
+				04B1DEB9208694B039791979FEE834CB /* Pods-SchoolBusLocator-acknowledgements.markdown */,
+				4B202972B5627608C728BBFD57AD0852 /* Pods-SchoolBusLocator-acknowledgements.plist */,
+				C3CCF69FEA87E7664E0EE0ACDE38E929 /* Pods-SchoolBusLocator-dummy.m */,
+				451DD0A7709D1584B117BC2624C1E794 /* Pods-SchoolBusLocator-frameworks.sh */,
+				15E15B7A38C517E1589984EC3D7C7F57 /* Pods-SchoolBusLocator-resources.sh */,
+				162EAEFE8696E1664C1E3BE7A4B3F6D8 /* Pods-SchoolBusLocator-umbrella.h */,
+				0B01524C15AB12B158F312817289FF53 /* Pods-SchoolBusLocator.debug.xcconfig */,
+				4B713B712C947524C2A761AFE4C53002 /* Pods-SchoolBusLocator.release.xcconfig */,
+			);
+			name = "Pods-SchoolBusLocator";
+			path = "Target Support Files/Pods-SchoolBusLocator";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2CDF86714FB7774D6399B0EC7F4C76FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CBC3D545F16BF54F5E6CF2AB5DA09C /* MessagePack.h in Headers */,
+				1D8A14419BCCFCBB3C6D4D899D0285A9 /* MessagePackPacker.h in Headers */,
+				FFFDD2EF6AF9C35A6F78B3FE1C8B77D5 /* MessagePackParser+Streaming.h in Headers */,
+				0678B4507EFBBCD419590ED5D3714F6F /* MessagePackParser.h in Headers */,
+				49B6DC9A654DD5AA277015DDED3B38B2 /* msgpack.h in Headers */,
+				67D1D003A36004DEB1E1378FFE1BC021 /* NSArray+MessagePack.h in Headers */,
+				7D43039B23057EAD3A14E2F77DF51E6D /* NSData+MessagePack.h in Headers */,
+				DE24F27D126CC2C53C281782DDA3C0C1 /* NSDictionary+MessagePack.h in Headers */,
+				7AB0B36E8DE595C669B96E2CA2AC58B3 /* NSNull+MessagePack.h in Headers */,
+				61EA6E0177FE88B2995D50E79FAE57C9 /* NSNumber+MessagePack.h in Headers */,
+				7F96AAE39F0F03391CE437A5CD478A6D /* NSString+MessagePack.h in Headers */,
+				883B9EA62F4D48D9C43F990B38AAFEBD /* object.h in Headers */,
+				2C8CE56BC7CB969FDB222EE55F9B08E5 /* pack.h in Headers */,
+				44F0575921E31EBECA456CC1C4B2D7AB /* pack_define.h in Headers */,
+				D9E415B6DAAFC1E65C93A92BD6789F3D /* pack_template.h in Headers */,
+				A6D6EDF6730AAD564F490A66D49280D5 /* sbuffer.h in Headers */,
+				9551360361813260E597817D3485A548 /* sysdep.h in Headers */,
+				57FC28DCE3F9AE811963D255D8015C9B /* unpack.h in Headers */,
+				2DE906194BCE22DAC85C9CD96756B45A /* unpack_define.h in Headers */,
+				676FBB2BC59CFD6B1584D1E05A2C3DA2 /* unpack_template.h in Headers */,
+				D9BCE9F89598D9BB79E53F623151F36E /* version.h in Headers */,
+				9BE7221D0F1CAE9383E59719E477F30D /* version_master.h in Headers */,
+				D140B6088FB45E60B0F042361708D482 /* vrefbuffer.h in Headers */,
+				32182D598977C226DED1A7D39EAC9DDB /* zbuffer.h in Headers */,
+				AB839EE1465511625A3D61B2D684B775 /* zone.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37D83291917D9529564708EC8D835795 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6029CA65916491DBDE28442AAB16E35D /* AblyRealtime.h in Headers */,
+				B66B625EAE8B8112E5497BFF9832BD3A /* ARTAuth+Private.h in Headers */,
+				A4376DE82A4B608D58DD4DBB99A747E7 /* ARTAuth.h in Headers */,
+				4E9B04FAA85E6822BC39E6D61B945E9A /* ARTAuthOptions+Private.h in Headers */,
+				FABF22424DDDBDE9C0024787C6F35BEB /* ARTAuthOptions.h in Headers */,
+				BE64B2E83D396BC04C85BB063AC28FF7 /* ARTBaseMessage+Private.h in Headers */,
+				59AAE538688E0878B2FD7C01E38D7287 /* ARTBaseMessage.h in Headers */,
+				D25D64742D375DAC486A96E54E6D8639 /* ARTChannel+Private.h in Headers */,
+				3851AC9A81173917553C77A96611C699 /* ARTChannel.h in Headers */,
+				5777E7AE31AA0AC2188A80A609AB0916 /* ARTChannelOptions.h in Headers */,
+				AEAA07921ED65EDD96BF1E1611274F59 /* ARTChannels+Private.h in Headers */,
+				1A530F425834AD26B885324D7DF23868 /* ARTChannels.h in Headers */,
+				E94E02FE8C304FB2DEEA8781F63BCCC4 /* ARTClientOptions+Private.h in Headers */,
+				B4AA6253ECF4834CB5F26F8833613C78 /* ARTClientOptions.h in Headers */,
+				F04868970D6458C665BCD308302EA806 /* ARTConnection+Private.h in Headers */,
+				C2F1A38699B4D3F0D903F1773FA269A4 /* ARTConnection.h in Headers */,
+				F5E1B760DFA86FBB15A09A89F5FBAB01 /* ARTConnectionDetails+Private.h in Headers */,
+				9E3B83567ACCAC7F5F784F2A0BD6DEEE /* ARTConnectionDetails.h in Headers */,
+				24E35DAFB64BE6A4F21BE51015A2B6B6 /* ARTCrypto+Private.h in Headers */,
+				E03FB26B6CC13F7CF582FDEED7B5C7A4 /* ARTCrypto.h in Headers */,
+				2E6ECEC3CC9923520668948354DE1C40 /* ARTDataEncoder.h in Headers */,
+				99224B02E558E0D5DFD85EE2AED8B2C9 /* ARTDataQuery+Private.h in Headers */,
+				A6596443DEBD7C6B6C9EFC372E461B61 /* ARTDataQuery.h in Headers */,
+				2B09A7560FF3D25BE700D4A6CE4DDB09 /* ARTDefault+Private.h in Headers */,
+				75C133AEACD7F2A62250D5C7CBF208BC /* ARTDefault.h in Headers */,
+				BAA7C29FE99C392385B14EFAED29C419 /* ARTEncoder.h in Headers */,
+				12104C7C8613B18CA514F4F61B610937 /* ARTEventEmitter+Private.h in Headers */,
+				97C77C50AC8B3470FB02520CE457AA0B /* ARTEventEmitter.h in Headers */,
+				63DF4B61FAD7CEA2A176557EA6F98909 /* ARTFallback.h in Headers */,
+				1BAAD49F120F4A7564F4D15C5C5D1C60 /* ARTHttp.h in Headers */,
+				5BB69C2225797E3DF8FDE9230134B2F6 /* ARTJsonEncoder.h in Headers */,
+				023AF28F34C0191BFDC0034BC4DBFB1D /* ARTJsonLikeEncoder.h in Headers */,
+				DB8CE76FA1BE21DEE65AC652D5881CE5 /* ARTLog+Private.h in Headers */,
+				7790B24BB91507BE4847F27B959E9E0E /* ARTLog.h in Headers */,
+				892E27747E5C1A4E087DA52B29E927A4 /* ARTMessage.h in Headers */,
+				661DAC4C3311A8BBAFF2957A7765BC39 /* ARTMsgpackEncoder.h in Headers */,
+				7A1F5DB85ED6FEE11DA86FA89635C18E /* ARTNSArray+ARTFunctional.h in Headers */,
+				935AE059C1929D9060BD73051B4FA928 /* ARTNSDate+ARTUtil.h in Headers */,
+				289F04475549B0D8C82CD66230EB83BA /* ARTNSDictionary+ARTDictionaryUtil.h in Headers */,
+				12782E902AB44E954704983AE89E8A5C /* ARTOSReachability.h in Headers */,
+				A462850671AC0AFB1920DAA9DEA21CB3 /* ARTPaginatedResult+Private.h in Headers */,
+				0296B4B53622140D35E5A74D34FF825B /* ARTPaginatedResult.h in Headers */,
+				1B864DC98F98FC9AE258821BEBAD6E83 /* ARTPresence+Private.h in Headers */,
+				2C9C90D1D4EC77A7CAE365F3C081FCF1 /* ARTPresence.h in Headers */,
+				8FB42E3E800127A5112393C37CA4E24D /* ARTPresenceMap.h in Headers */,
+				0364273D118F49E10087BD18EED2453E /* ARTPresenceMessage.h in Headers */,
+				8338323268B8BB1AA813D1628361B38B /* ARTProtocolMessage+Private.h in Headers */,
+				0840470BF3F99FD96591AC28B8561EA9 /* ARTProtocolMessage.h in Headers */,
+				CAE9598A919A4F18DE789148D6FBA8EB /* ARTQueuedMessage.h in Headers */,
+				4DD8D7285F7AF1D25F2240B27EF60EC3 /* ARTReachability.h in Headers */,
+				F6D064C6E4B9B363290E9CE666E0C1C8 /* ARTRealtime+Private.h in Headers */,
+				EE2CAD388E82356810D769C7194D0F1B /* ARTRealtime.h in Headers */,
+				8B43036819DAE93F8BA8715DBAF82498 /* ARTRealtimeChannel+Private.h in Headers */,
+				D03DF6180CFD5AE5E5E252AF38568C47 /* ARTRealtimeChannel.h in Headers */,
+				442CDD6678E9C37001F523505A02E515 /* ARTRealtimeChannels+Private.h in Headers */,
+				1CD18A82FDC02C765C8E7BD90A706274 /* ARTRealtimeChannels.h in Headers */,
+				0E0C72B9B7B3ABE1E214B1919C31902D /* ARTRealtimePresence+Private.h in Headers */,
+				FB560AE16B7257C001A9139FD814F7EF /* ARTRealtimePresence.h in Headers */,
+				E058CB4CEC1343C185AF2DC85A34573F /* ARTRealtimeTransport.h in Headers */,
+				EE2A4947CBA0D4B1C9D197E049C6D822 /* ARTRest+Private.h in Headers */,
+				A6EF46D6865FC4E7ECA4994BBA4A74FC /* ARTRest.h in Headers */,
+				F4FEF9CC1335271720B752950153920B /* ARTRestChannel+Private.h in Headers */,
+				BB12AA554CFA18BABD36716E298C092C /* ARTRestChannel.h in Headers */,
+				4661F722D7B5EC14A2A8524565FD82AC /* ARTRestChannels.h in Headers */,
+				F7C1BB5E71B3AA810B51EEC31D8B4FB5 /* ARTRestPresence+Private.h in Headers */,
+				519A55A2DE6F92C3E66951674C1D8472 /* ARTRestPresence.h in Headers */,
+				8DD0F26E3E27BB289D6FE7E2B0A7794A /* ARTStats.h in Headers */,
+				F66C6D6E3BEE0201CD2EDDEBFED3107A /* ARTStatus.h in Headers */,
+				5B31499312EDE2AF2A4538715D44D923 /* ARTTokenDetails.h in Headers */,
+				D86E30E9B8B4617599AE113F0D18C374 /* ARTTokenParams+Private.h in Headers */,
+				D24FBAFD9056BF7E7DACAB01152AEF63 /* ARTTokenParams.h in Headers */,
+				0410D70A2475E7BFED0566361CB81EBD /* ARTTokenRequest.h in Headers */,
+				D1BE8B0D2E387F396933DDE6CF9D6067 /* ARTTypes.h in Headers */,
+				74FF38B60020F9AAA22F79D14DDAEFD6 /* ARTURLSessionServerTrust.h in Headers */,
+				292FD1FDB4BA34B701E18C0042A9A8BF /* ARTWebSocketTransport+Private.h in Headers */,
+				78374FB96021B3B05A867FBEF65A929A /* ARTWebSocketTransport.h in Headers */,
+				19789C153C952F8CC89E0615E60D570F /* CompatibilityMacros.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5EE94149E6B22067E6EC61FA4D62D24 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE866D40A241D87F03E0D6DCB325B933 /* SocketRocket-umbrella.h in Headers */,
+				E021A3E5F469D14693BD8DBCFAE2D1C0 /* SocketRocket.h in Headers */,
+				FDD09470FE2E1A939F51F8E1D4EB07CB /* SRWebSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF240A5DB9CE0E98F0635D387636C8DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				167ED0F98BD1D9AFA0DFA740F2B8A1ED /* Pods-SchoolBusLocator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0AB91771F851BEC934D2D3D69A6EA1C9 /* Pods-SchoolBusLocator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDCFAC2321F0DBD182607A4741807B47 /* Build configuration list for PBXNativeTarget "Pods-SchoolBusLocator" */;
+			buildPhases = (
+				EC66D3C8EAE60C895C55C1ED260D33FB /* Sources */,
+				7FC856E79A92C23777E7FD8F02CDC932 /* Frameworks */,
+				FF240A5DB9CE0E98F0635D387636C8DB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BF1A1985EA58E8C1AEF73DEFF8DB06B /* PBXTargetDependency */,
+				5419F9C606562179700E0778C74A93FA /* PBXTargetDependency */,
+				038206ADC0C317487A86D9FAD73C5FA2 /* PBXTargetDependency */,
+			);
+			name = "Pods-SchoolBusLocator";
+			productName = "Pods-SchoolBusLocator";
+			productReference = 98D84931A219C8CB6BCC5F72C3FBFF7D /* Pods_SchoolBusLocator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		20606BCAEBABE93C739E57D3D6AE13DF /* AblyRealtime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBDBAC2FDDA933BB285AD00503684FF7 /* Build configuration list for PBXNativeTarget "AblyRealtime" */;
+			buildPhases = (
+				44F41F0B7DC5E813A892FE1A12A15A40 /* Sources */,
+				376461481F325FAD88ED1ECDEBA9806D /* Frameworks */,
+				37D83291917D9529564708EC8D835795 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70B04E38312D6F094A24F695DAD80F48 /* PBXTargetDependency */,
+				733750C289403CB7F78F7E54D9C09DEF /* PBXTargetDependency */,
+			);
+			name = AblyRealtime;
+			productName = AblyRealtime;
+			productReference = 5FBD324652B4C68B3E8479C400909915 /* AblyRealtime.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A71DE39C6DC74DF260209E474303AAD0 /* msgpack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A85793C405187E09F8630DADCA4BF44 /* Build configuration list for PBXNativeTarget "msgpack" */;
+			buildPhases = (
+				24B0E04E8459A99F5BF2ED9B67E616D4 /* Sources */,
+				1ECEC4D56323E1221FE9F8E5D16F766E /* Frameworks */,
+				2CDF86714FB7774D6399B0EC7F4C76FA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = msgpack;
+			productName = msgpack;
+			productReference = E7C07E409F3DC7725FE24BB5321A1117 /* msgpack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D3C96090D5500AD1E03C269284F83F81 /* SocketRocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9917EC9F2081A94DA67834AEF4C74ADF /* Build configuration list for PBXNativeTarget "SocketRocket" */;
+			buildPhases = (
+				D2C7FD059C849A417B74716FA4618EE2 /* Sources */,
+				8BA49FD55589658B8632C7D8B9F44EDC /* Frameworks */,
+				D5EE94149E6B22067E6EC61FA4D62D24 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketRocket;
+			productName = SocketRocket;
+			productReference = E9E375ABE94F94A48C3FE9FA2378AD69 /* SocketRocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E268C7AE65AF1F59BAA6A764BFE8032F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20606BCAEBABE93C739E57D3D6AE13DF /* AblyRealtime */,
+				A71DE39C6DC74DF260209E474303AAD0 /* msgpack */,
+				0AB91771F851BEC934D2D3D69A6EA1C9 /* Pods-SchoolBusLocator */,
+				D3C96090D5500AD1E03C269284F83F81 /* SocketRocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24B0E04E8459A99F5BF2ED9B67E616D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52D42FDAEE4FAC108FB86CCE92F565B2 /* MessagePackPacker.m in Sources */,
+				BD2C299DF8F1BF5E3D3119D4F386F9FE /* MessagePackParser+Streaming.m in Sources */,
+				D07E7A96E3F23472BC9F33D60D7500CF /* MessagePackParser.m in Sources */,
+				BAD2A27F7110CF951C7B0365658B795E /* msgpack-dummy.m in Sources */,
+				0754CF219E6940BE55A5AF295843A3A8 /* NSArray+MessagePack.m in Sources */,
+				C80FF034793CF1FEE33C67C0A5461B92 /* NSData+MessagePack.m in Sources */,
+				3A4D25E24E788F14682591EE3C44F0D6 /* NSDictionary+MessagePack.m in Sources */,
+				C9227835F17C92F014300CC047B6BC0C /* NSNull+MessagePack.m in Sources */,
+				D90F0B9C910F53636F020935A5C94ACA /* NSNumber+MessagePack.m in Sources */,
+				723F4ECE04DA471D3317620119E5A8B9 /* NSString+MessagePack.m in Sources */,
+				E2C03C5609EA29FA0ADD8CE5B30636EA /* objectc.c in Sources */,
+				F7B7D82A66E70529DA4C428A65CD0491 /* unpack.c in Sources */,
+				7A8CE2FAF2636DA323A46541D0D09B84 /* version.c in Sources */,
+				61F3F44807F000562E36E39DC483823C /* vrefbuffer.c in Sources */,
+				B8E5598218ED96A9B5C88DAF9DB2F662 /* zone.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F41F0B7DC5E813A892FE1A12A15A40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E9535127916EBDF3A6E8CC0FDB63B50 /* AblyRealtime-dummy.m in Sources */,
+				64C91F3BC7B9D4A3D1892F9A33A59017 /* ARTAuth.m in Sources */,
+				E3F72EF9EC239C9BA75E3B1B86A70C48 /* ARTAuthOptions.m in Sources */,
+				A9FE1FF57850160BD4E95DF440744EDB /* ARTBaseMessage.m in Sources */,
+				AA8A525A6F956C666CF4EB8D2D9786E1 /* ARTChannel.m in Sources */,
+				14BD4F384BD346F7980F633EB2732520 /* ARTChannelOptions.m in Sources */,
+				453081B2D6C1398884BA6C17B6EEC944 /* ARTChannels.m in Sources */,
+				7B8B32616CC1A3F593D80323508F4B92 /* ARTClientOptions.m in Sources */,
+				CEDFDEDE512A7A8909505813A2BBE609 /* ARTConnection.m in Sources */,
+				AAFCD4E1000142057CE7D826ADADB40A /* ARTConnectionDetails.m in Sources */,
+				C86FB36BC32285F3874A00711CAA01F9 /* ARTCrypto.m in Sources */,
+				542B399052A6B68302336D01A8BF336F /* ARTDataEncoder.m in Sources */,
+				9F632D40B578D67A8CE7B69E06970E35 /* ARTDataQuery.m in Sources */,
+				52E2F7B770F18D445FB7D5CD561430CD /* ARTDefault.m in Sources */,
+				55E0D06F53998FD797362C7ADCB42459 /* ARTEventEmitter.m in Sources */,
+				F4C8F289223F8305DADFE41E7436E255 /* ARTFallback.m in Sources */,
+				B03BF7CBAA4669EC483DCC037418B14C /* ARTHttp.m in Sources */,
+				EBC8641FCCF1200756E2E8BA0DF73F48 /* ARTJsonEncoder.m in Sources */,
+				22E795054B532647CD68AC3FD57D4049 /* ARTJsonLikeEncoder.m in Sources */,
+				1B75F27EAAB5DA1C8CB5BAE580C28408 /* ARTLog.m in Sources */,
+				138E3C62FDF47560A31C0497E7DB6B5E /* ARTMessage.m in Sources */,
+				C65539120E5E12A04E8012C370B69F9E /* ARTMsgpackEncoder.m in Sources */,
+				15511AD798D338BFB731324C9CE3F9E7 /* ARTNSArray+ARTFunctional.m in Sources */,
+				012865E828EFA0F4A9C8E83CF8F6A77E /* ARTNSDate+ARTUtil.m in Sources */,
+				1A6EC4487499CE2133F263FBD8166148 /* ARTNSDictionary+ARTDictionaryUtil.m in Sources */,
+				7F06766E6D086B25E9FC0EC7C2E04131 /* ARTOSReachability.m in Sources */,
+				E7AEF2881ED8FCB0842A7319B808AC5A /* ARTPaginatedResult.m in Sources */,
+				9C821D10D8C94C701B0D992AA715BB0B /* ARTPresence.m in Sources */,
+				F522F290003588994BA3B43E4D12FF17 /* ARTPresenceMap.m in Sources */,
+				1F378D3223497392AA166DFC3310A5C2 /* ARTPresenceMessage.m in Sources */,
+				3170FA1453DD2FB31F070E2DB3B50CB0 /* ARTProtocolMessage.m in Sources */,
+				0247F879593E62F7D8CB2521CFA38B44 /* ARTQueuedMessage.m in Sources */,
+				55E8ADDFC3CCE0751BA1940C2AC7EC50 /* ARTRealtime.m in Sources */,
+				98D8422B10CF28A45EAB3F05134FCB23 /* ARTRealtimeChannel.m in Sources */,
+				95FEECB796A715587E7A5C5961A28E91 /* ARTRealtimeChannels.m in Sources */,
+				FC31EADBEF83BC2DC950CE29E36CBE5A /* ARTRealtimePresence.m in Sources */,
+				0D1982F1DC365FB0C0A6F4416687FD26 /* ARTRealtimeTransport.m in Sources */,
+				A215266401A3263D7A77026C781CE2CA /* ARTRest.m in Sources */,
+				F9410E809C89134D64B32991CB4247C5 /* ARTRestChannel.m in Sources */,
+				D85BD2911825B4D426E15B02BCB4DEA2 /* ARTRestChannels.m in Sources */,
+				57CBEE03AB561EB023534E899940527F /* ARTRestPresence.m in Sources */,
+				4640008F5DB2D4C8C719D8D643C60E70 /* ARTStats.m in Sources */,
+				BA3C2573AC7BF2C960379988787B8250 /* ARTStatus.m in Sources */,
+				6CDE2EFED2348A32CE95FFE5F50D3CCB /* ARTTokenDetails.m in Sources */,
+				17E3508062615E4D57F471EA77D948C9 /* ARTTokenParams.m in Sources */,
+				C45A25356AE5D1CFD3BAD71111483D88 /* ARTTokenRequest.m in Sources */,
+				7A22C7CAFF0D96DF569E6B5A092FE17F /* ARTTypes.m in Sources */,
+				3A11D0BE1D2DB999B3C8374DA798FABF /* ARTURLSessionServerTrust.m in Sources */,
+				EDC4229AAD15380F39506B4380B87456 /* ARTWebSocketTransport.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C7FD059C849A417B74716FA4618EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9578C5522FF3C3FF6F61593B1E5DDB3E /* SocketRocket-dummy.m in Sources */,
+				ED009C79D027C1CA879D404A47993EC6 /* SRWebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC66D3C8EAE60C895C55C1ED260D33FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				321A2961D5C4BCA49D6D544F12052A7B /* Pods-SchoolBusLocator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		038206ADC0C317487A86D9FAD73C5FA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = msgpack;
+			target = A71DE39C6DC74DF260209E474303AAD0 /* msgpack */;
+			targetProxy = 1385A35781E2DB63594020D530E01279 /* PBXContainerItemProxy */;
+		};
+		5419F9C606562179700E0778C74A93FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = D3C96090D5500AD1E03C269284F83F81 /* SocketRocket */;
+			targetProxy = F1291822CD61EC6F6FF3937F23D5990E /* PBXContainerItemProxy */;
+		};
+		70B04E38312D6F094A24F695DAD80F48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = D3C96090D5500AD1E03C269284F83F81 /* SocketRocket */;
+			targetProxy = 14C31E57C9E59A17F73D3471900BDB4B /* PBXContainerItemProxy */;
+		};
+		733750C289403CB7F78F7E54D9C09DEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = msgpack;
+			target = A71DE39C6DC74DF260209E474303AAD0 /* msgpack */;
+			targetProxy = 9FC61C2E3788A4297B949884E57A860F /* PBXContainerItemProxy */;
+		};
+		7BF1A1985EA58E8C1AEF73DEFF8DB06B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AblyRealtime;
+			target = 20606BCAEBABE93C739E57D3D6AE13DF /* AblyRealtime */;
+			targetProxy = A06E848B4D1C228E89F1BED01EB86A54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0062195B5CD649395C9A17AF4EA28AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D0D5DA45A611416AFBCEF0B56C012A /* AblyRealtime.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AblyRealtime/AblyRealtime-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AblyRealtime/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AblyRealtime/AblyRealtime.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AblyRealtime;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0342395ABFD2D4BDE9B60992A7155B81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B713B712C947524C2A761AFE4C53002 /* Pods-SchoolBusLocator.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SchoolBusLocator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SchoolBusLocator/Pods-SchoolBusLocator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SchoolBusLocator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0C7CB71483EB4E49ACD8843F8D741B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7617902FB2577E919B7318FFEDF4017F /* SocketRocket.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SocketRocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SocketRocket/SocketRocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SocketRocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1C406BB30BDD3BC153E45670C302D9AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 949D2C0188DC14CA776DE0B1FC8D8AED /* msgpack.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/msgpack/msgpack-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/msgpack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/msgpack/msgpack.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = msgpack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D1B92EE74176BD658577099D686FE4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 949D2C0188DC14CA776DE0B1FC8D8AED /* msgpack.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/msgpack/msgpack-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/msgpack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/msgpack/msgpack.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = msgpack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84E916DF0E5561C8B3DE400A42DE51E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B01524C15AB12B158F312817289FF53 /* Pods-SchoolBusLocator.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SchoolBusLocator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SchoolBusLocator/Pods-SchoolBusLocator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SchoolBusLocator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BD7AE8FAAA7E229A52BEF3E9C5076373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D0D5DA45A611416AFBCEF0B56C012A /* AblyRealtime.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AblyRealtime/AblyRealtime-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AblyRealtime/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AblyRealtime/AblyRealtime.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AblyRealtime;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DEC29A18D7EE993D4B4410624D6C37C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7617902FB2577E919B7318FFEDF4017F /* SocketRocket.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SocketRocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SocketRocket/SocketRocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SocketRocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A85793C405187E09F8630DADCA4BF44 /* Build configuration list for PBXNativeTarget "msgpack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1B92EE74176BD658577099D686FE4A /* Debug */,
+				1C406BB30BDD3BC153E45670C302D9AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9917EC9F2081A94DA67834AEF4C74ADF /* Build configuration list for PBXNativeTarget "SocketRocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C7CB71483EB4E49ACD8843F8D741B14 /* Debug */,
+				DEC29A18D7EE993D4B4410624D6C37C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDCFAC2321F0DBD182607A4741807B47 /* Build configuration list for PBXNativeTarget "Pods-SchoolBusLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E916DF0E5561C8B3DE400A42DE51E1 /* Debug */,
+				0342395ABFD2D4BDE9B60992A7155B81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBDBAC2FDDA933BB285AD00503684FF7 /* Build configuration list for PBXNativeTarget "AblyRealtime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0062195B5CD649395C9A17AF4EA28AC6 /* Debug */,
+				BD7AE8FAAA7E229A52BEF3E9C5076373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,18 @@
+PODS:
+  - AblyRealtime (0.8.6):
+    - msgpack (= 0.1.8)
+    - SocketRocket (= 0.5.1)
+  - msgpack (0.1.8)
+  - SocketRocket (0.5.1)
+
+DEPENDENCIES:
+  - AblyRealtime
+
+SPEC CHECKSUMS:
+  AblyRealtime: 40f20d4d17b6c28238034221fd5e344db3b5235f
+  msgpack: 97491d2ea799408f4694f2c7d7fd79baf77853dd
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+
+PODFILE CHECKSUM: 1b5a5f87aac63ab263278b464bc83c55b4a831a7
+
+COCOAPODS: 1.1.1
