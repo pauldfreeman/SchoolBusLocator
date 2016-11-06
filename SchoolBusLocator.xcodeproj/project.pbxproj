@@ -13,6 +13,7 @@
 		B11E9A511DCA392B00E001CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B11E9A4F1DCA392B00E001CF /* Main.storyboard */; };
 		B11E9A531DCA392B00E001CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B11E9A521DCA392B00E001CF /* Assets.xcassets */; };
 		B11E9A561DCA392B00E001CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B11E9A541DCA392B00E001CF /* LaunchScreen.storyboard */; };
+		B16DFCC41DCBF0E700B9C858 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16DFCC31DCBF0E700B9C858 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		B11E9A521DCA392B00E001CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B11E9A551DCA392B00E001CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B11E9A571DCA392B00E001CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B16DFCC31DCBF0E700B9C858 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B17B32501DCC6A9000C834BB /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		CE46A3401126E90B89DB2200 /* Pods-SchoolBusLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolBusLocator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolBusLocator/Pods-SchoolBusLocator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16DFCC41DCBF0E700B9C858 /* MapKit.framework in Frameworks */,
 				6ED2C81BF881380C9DF7376F /* Pods_SchoolBusLocator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +47,7 @@
 		785CDDBE48116E49431B6007 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B16DFCC31DCBF0E700B9C858 /* MapKit.framework */,
 				02996BDAD34D35F6A2E3A7DB /* Pods_SchoolBusLocator.framework */,
 			);
 			name = Frameworks;
@@ -51,6 +56,7 @@
 		B11E9A3F1DCA392B00E001CF = {
 			isa = PBXGroup;
 			children = (
+				B17B32501DCC6A9000C834BB /* MyPlayground.playground */,
 				B11E9A4A1DCA392B00E001CF /* SchoolBusLocator */,
 				B11E9A491DCA392B00E001CF /* Products */,
 				FB35369FA33E762C3812AEA6 /* Pods */,
@@ -125,6 +131,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 9V9KDQQ5K4;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -202,7 +213,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -379,6 +390,7 @@
 				B11E9A5C1DCA392B00E001CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
