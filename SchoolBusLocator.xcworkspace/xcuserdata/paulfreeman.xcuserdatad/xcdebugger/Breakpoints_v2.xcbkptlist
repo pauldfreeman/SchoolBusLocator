@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SchoolBusLocator/ViewController.swift"
-            timestampString = "499951652.957174"
+            timestampString = "500453700.788122"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "updatePosition(positionString:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

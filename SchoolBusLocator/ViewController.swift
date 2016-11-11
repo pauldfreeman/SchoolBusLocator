@@ -13,27 +13,29 @@ import MapKit
 
 class ViewController: UIViewController, MKMapViewDelegate {
 
-    
-    @IBOutlet weak var lblCurrentLat: UILabel!
-    @IBOutlet weak var lblCurrentLon: UILabel!
-    @IBOutlet weak var lblHorizAcc: UILabel!
-    @IBOutlet weak var lblSpeedMPH: UILabel!
-
     @IBOutlet weak var lblCurrentTime: UILabel!
     @IBOutlet weak var lblPositionTime: UILabel!
+    
     @IBOutlet weak var lblDelay: UILabel!
+    @IBOutlet weak var imgDelay: UIImageView!
 
+    @IBOutlet weak var imgETA: UIImageView!
+    @IBOutlet weak var lblETA: UILabel!
     @IBOutlet weak var mapView: MKMapView!
-    
-    
-    @IBOutlet weak var btnSubscribe: UIButton!
-    @IBOutlet weak var btnUnsubscribe: UIButton!
-    
     
     var locationManager: CLLocationManager = CLLocationManager()
     var startLocation: CLLocation!
-    var channel: ARTRealtimeChannel!
-
+    var channelPosition: ARTRealtimeChannel!
+    var channelHeartbeat: ARTRealtimeChannel!
+    
+    var lat: Double!
+    var lon: Double!
+    var horizAcc: Double!
+    var speed: Double!
+    
+    var locTS: Date!
+    var transmitTS: Date!
+    var positionReceived: Bool = false
     
     var client: ARTRealtime = ARTRealtime(key: "QGOsVA.UnM4VQ:YuOO9DIWTgs2BcPZ")
     var annotation: MKPointAnnotation = MKPointAnnotation()
@@ -41,71 +43,73 @@ class ViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        channel = client.channels.get("Position")
+        channelPosition = client.channels.get("Position")
+        channelHeartbeat = client.channels.get("Heartbeat")
         annotation.title = "SchoolBus"
-    }
+        self.subscribe()
+        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateScreen), userInfo: nil, repeats: true)
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
     }
-
-    @IBAction func clicked(_ sender: AnyObject) {
+    
+    internal func subscribe() {
         
         self.mapView.addAnnotation(self.annotation)
         
-        channel.subscribe{ message in
-            
-        let positionString: String = message.data as! String
-            
-        //let positionString: String = "37.330432|-122.030018|5.000000|14 mph|November 04 2016 07:38:17.121|November 04 2016 07:41:32.692"
+        channelPosition.subscribe
+            { message in
+                self.updatePosition(positionString: message.data as! String)
+        }
         
+        channelHeartbeat.subscribe
+            { message in
+                debugPrint("received heartbeat")
+        }
+    }
+    
+    internal func unsubscribe() {
+        
+        self.mapView.removeAnnotation(self.annotation)
+        channelPosition.unsubscribe()
+    }
+    
+    internal func updateScreen()
+    {
+        if (positionReceived)
+        {
+        let delay: Double = NSDate().timeIntervalSince(locTS!)
+        self.lblDelay.text = String(format: "%.0f seconds", delay)
+        if (delay > 60.0){
+            lblDelay.textColor = #colorLiteral(red: 1, green: 0.009361755543, blue: 0, alpha: 1)
+            imgDelay.image = #imageLiteral(resourceName: "signalBad")
+        }else{
+            lblDelay.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            imgDelay.image = #imageLiteral(resourceName: "signalOK")
+        }
+        }
+
+    }
+    
+    internal func updatePosition(positionString: String)
+    {
         let splitArray = positionString.components(separatedBy: "|")
         
         //CLLocationDegrees
-        let lat: Double = Double(splitArray[0] as String)!
-        let lon: Double = Double(splitArray[1] as String)!
+        lat = Double(splitArray[0] as String)!
+        lon = Double(splitArray[1] as String)!
         let horizAcc: Double = Double(splitArray[2] as String)!
         let speed: String = splitArray[3] as String!
-        
-        let locTSS: String = splitArray[4] as String!
-        let transmitTSS: String = splitArray[5] as String!
-        
-        let dateformatter = DateFormatter()
-        dateformatter.dateFormat = "MMMM dd yyyy hh:mm:ss.SSS"
-        
-        dateformatter.date(from: locTSS)
-        dateformatter.date(from: transmitTSS)
-            
-        self.lblCurrentLat.text = splitArray[0] as String
-        self.lblCurrentLon.text = splitArray[1] as String
-        self.lblHorizAcc.text = splitArray[2] as String
-        self.lblSpeedMPH.text = speed
-        self.lblPositionTime.text = locTSS
-        self.lblCurrentTime.text = dateformatter.string(from: NSDate() as Date)
-            
-        let delay: Double = NSDate().timeIntervalSince(dateformatter.date(from: locTSS)!)
-            
-        self.lblDelay.text = String(format: "%.0f seconds", delay)
-            
-        
+  
         let  locationCoord: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: lat, longitude: lon)
         
-        let location: CLLocation = CLLocation.init(coordinate: locationCoord, altitude: 0, horizontalAccuracy: horizAcc, verticalAccuracy: 1, timestamp: dateformatter.date(from: locTSS)!)
-            
-            let region = MKCoordinateRegionMakeWithDistance(location.coordinate,500, 500)
-            self.mapView.setRegion(region, animated: true)
-            self.mapView.centerCoordinate = location.coordinate
-            self.annotation.coordinate = location.coordinate
-
-            
- 
-        }
+        let location: CLLocation = CLLocation.init(coordinate: locationCoord, altitude: 0, horizontalAccuracy: horizAcc, verticalAccuracy: 1, timestamp: locTS!)
+        
+        let region = MKCoordinateRegionMakeWithDistance(location.coordinate,500, 500)
+        self.mapView.setRegion(region, animated: true)
+        self.mapView.centerCoordinate = location.coordinate
+        self.annotation.coordinate = location.coordinate
+        
+        positionReceived = true
     }
 
-    @IBAction func unsubscribe_clicked(_ sender: Any) {
-    
-        self.mapView.removeAnnotation(self.annotation)
-        channel.unsubscribe()
-    }
 }
