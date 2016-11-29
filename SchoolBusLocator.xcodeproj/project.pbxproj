@@ -14,6 +14,7 @@
 		B11E9A531DCA392B00E001CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B11E9A521DCA392B00E001CF /* Assets.xcassets */; };
 		B11E9A561DCA392B00E001CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B11E9A541DCA392B00E001CF /* LaunchScreen.storyboard */; };
 		B16DFCC41DCBF0E700B9C858 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16DFCC31DCBF0E700B9C858 /* MapKit.framework */; };
+		DA0274991DEDFD3E00D21213 /* PositionTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0274981DEDFD3E00D21213 /* PositionTools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		B16DFCC31DCBF0E700B9C858 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B17B32501DCC6A9000C834BB /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		CE46A3401126E90B89DB2200 /* Pods-SchoolBusLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolBusLocator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolBusLocator/Pods-SchoolBusLocator.debug.xcconfig"; sourceTree = "<group>"; };
+		DA0274981DEDFD3E00D21213 /* PositionTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PositionTools.swift; path = ../SchoolBus/SchoolBus/PositionTools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				B17B32501DCC6A9000C834BB /* MyPlayground.playground */,
 				B11E9A4A1DCA392B00E001CF /* SchoolBusLocator */,
+				DA0274971DEDFD0800D21213 /* PositionTools */,
 				B11E9A491DCA392B00E001CF /* Products */,
 				FB35369FA33E762C3812AEA6 /* Pods */,
 				785CDDBE48116E49431B6007 /* Frameworks */,
@@ -83,6 +86,14 @@
 				B11E9A571DCA392B00E001CF /* Info.plist */,
 			);
 			path = SchoolBusLocator;
+			sourceTree = "<group>";
+		};
+		DA0274971DEDFD0800D21213 /* PositionTools */ = {
+			isa = PBXGroup;
+			children = (
+				DA0274981DEDFD3E00D21213 /* PositionTools.swift */,
+			);
+			name = PositionTools;
 			sourceTree = "<group>";
 		};
 		FB35369FA33E762C3812AEA6 /* Pods */ = {
@@ -225,6 +236,7 @@
 			files = (
 				B11E9A4E1DCA392B00E001CF /* ViewController.swift in Sources */,
 				B11E9A4C1DCA392B00E001CF /* AppDelegate.swift in Sources */,
+				DA0274991DEDFD3E00D21213 /* PositionTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

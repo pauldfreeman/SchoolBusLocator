@@ -47,9 +47,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         channelHeartbeat = client.channels.get("Heartbeat")
         annotation.title = "SchoolBus"
         self.subscribe()
-        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateScreen), userInfo: nil, repeats: true)
 
-    
     }
     
     internal func subscribe() {
@@ -58,7 +56,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         channelPosition.subscribe
             { message in
-                self.updatePosition(positionString: message.data as! String)
+                if (message.data as! String != "HEARTBEAT"){
+                    self.updatePosition(positionString: message.data as! String)
+                }
         }
         
         channelHeartbeat.subscribe
@@ -92,24 +92,15 @@ class ViewController: UIViewController, MKMapViewDelegate {
     
     internal func updatePosition(positionString: String)
     {
-        let splitArray = positionString.components(separatedBy: "|")
-        
-        //CLLocationDegrees
-        lat = Double(splitArray[0] as String)!
-        lon = Double(splitArray[1] as String)!
-        let horizAcc: Double = Double(splitArray[2] as String)!
-        let speed: String = splitArray[3] as String!
-  
-        let  locationCoord: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: lat, longitude: lon)
-        
-        let location: CLLocation = CLLocation.init(coordinate: locationCoord, altitude: 0, horizontalAccuracy: horizAcc, verticalAccuracy: 1, timestamp: locTS!)
-        
+        let location: CLLocation = PositionTools.Unpack(positionString)
+        locTS = location.timestamp
         let region = MKCoordinateRegionMakeWithDistance(location.coordinate,500, 500)
         self.mapView.setRegion(region, animated: true)
         self.mapView.centerCoordinate = location.coordinate
         self.annotation.coordinate = location.coordinate
-        
         positionReceived = true
+        
+        updateScreen()
     }
 
 }
